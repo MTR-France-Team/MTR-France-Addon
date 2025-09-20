@@ -1,21 +1,21 @@
 {
-  "block.mtrfranceaddon.mtrfranceaddon_logo_block": "MTR France Addon Logo",
-  "block.mtrfranceaddon.sncf_logo_actuel_block": "Actual SNCF Logo Block",
-  "block.mtrfranceaddon.sncf_logo_1938-1947_block": "SNCF 1st Logo from 1938 to 1947",
-  "block.mtrfranceaddon.sncf_logo_1947-1967_block": "SNCF 2nd Logo from 1947 to 1967",
-  "block.mtrfranceaddon.sncf_logo_1967-1985_block_v1": "SNCF 3rd Logo from 1967 to 1985 (black)",
-  "block.mtrfranceaddon.sncf_logo_1967-1985_block_v2": "SNCF 3rd Logo from 1967 to 1985 (blue)",
-  "block.mtrfranceaddon.sncf_logo_1985-1992_block_v1": "SNCF 4th Logo from 1985 to 1992 (black)",
-  "block.mtrfranceaddon.sncf_logo_1985-1992_block_v2": "SNCF 4th Logo from 1985 to 1992 (blue)",
-  "block.mtrfranceaddon.sncf_logo_1992-2005_block": "SNCF 5th Logo from 1992 to 2005",
-  "block.mtrfranceaddon.ratp_logo_actuel_block": "Actual RATP Logo Block",
-  "block.mtrfranceaddon.ratp_logo_1951-1960_block": "RATP 1st Logo from 1951 to 1960",
-  "block.mtrfranceaddon.ratp_logo_1960-1976_block": "RATP 2nd Logo from 1960 to 1976",
-  "block.mtrfranceaddon.ratp_logo_1976-1992_block": "RATP 3rd Logo from 1976 to 1992",
+  "block.mtrfranceaddon.mtrfranceaddon_logo_block": "MTR France Addon logo",
+  "block.mtrfranceaddon.sncf_logo_actuel_block": "Actual SNCF logo block",
+  "block.mtrfranceaddon.sncf_logo_1938-1947_block": "SNCF 1st logo from 1938 to 1947",
+  "block.mtrfranceaddon.sncf_logo_1947-1967_block": "SNCF 2nd logo from 1947 to 1967",
+  "block.mtrfranceaddon.sncf_logo_1967-1985_block_v1": "SNCF 3rd logo from 1967 to 1985 (black)",
+  "block.mtrfranceaddon.sncf_logo_1967-1985_block_v2": "SNCF 3rd logo from 1967 to 1985 (blue)",
+  "block.mtrfranceaddon.sncf_logo_1985-1992_block_v1": "SNCF 4th logo from 1985 to 1992 (black)",
+  "block.mtrfranceaddon.sncf_logo_1985-1992_block_v2": "SNCF 4th logo from 1985 to 1992 (blue)",
+  "block.mtrfranceaddon.sncf_logo_1992-2005_block": "SNCF 5th logo from 1992 to 2005",
+  "block.mtrfranceaddon.ratp_logo_actuel_block": "Actual RATP logo block",
+  "block.mtrfranceaddon.ratp_logo_1951-1960_block": "RATP 1st logo from 1951 to 1960",
+  "block.mtrfranceaddon.ratp_logo_1960-1976_block": "RATP 2nd logo from 1960 to 1976",
+  "block.mtrfranceaddon.ratp_logo_1976-1992_block": "RATP 3rd logo from 1976 to 1992",
   "itemGroup.mtrfranceaddon.mtrfranceaddon_group": "MTR France Addon",
 
   "block.mtrfranceaddon.test_platform": "Test Platform",
 
-  "item.mtrfranceaddon.rail_connector_base": "Rail Connector (%s km/h)",
-  "item.mtrfranceaddon.rail_connector_oneway": "Rail Connector (%s km/h) (One-Way)"
+  "item.mtrfranceaddon.rail_connector_base": "Rail connector (%s km/h)",
+  "item.mtrfranceaddon.rail_connector_oneway": "Rail connector (%s km/h) (One-Way)"
 }
