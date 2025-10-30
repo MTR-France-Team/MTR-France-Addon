@@ -1,1 +1,10 @@
-{}
+{
+  "block.mtrfranceaddon.mtrfranceaddon_logo_block": "MTR France Add-on logó",
+  "block.mtrfranceaddon.sncf_logo_actuel_block": "A tényleges SNCF logóblokk",
+  "block.mtrfranceaddon.sncf_logo_1938-1947_block": "Az SNCF első logója 1938 és 1947 között",
+  "block.mtrfranceaddon.sncf_logo_1947-1967_block": "Az SNCF 2 logója 1947 és 1967 között",
+  "block.mtrfranceaddon.sncf_logo_1967-1985_block_v1": "SNCF 3. logó 1967-től 1985-ig (fekete)",
+  "block.mtrfranceaddon.sncf_logo_1967-1985_block_v2": "SNCF 3. logó 1967-től 1985-ig (kék)",
+  "block.mtrfranceaddon.sncf_logo_1985-1992_block_v1": "SNCF 4. logó 1985-től 1992-ig (fekete)",
+  "block.mtrfranceaddon.sncf_logo_1985-1992_block_v2": "SNCF 4. logó 1985-től 1992-ig (kék)"
+}
