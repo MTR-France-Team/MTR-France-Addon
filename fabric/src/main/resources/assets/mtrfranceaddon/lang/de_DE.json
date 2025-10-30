@@ -1,4 +1,25 @@
 {
+  "block.mtrfranceaddon.mtrfranceaddon_logo_block": "MTR Frankreich Add-on Logo",
+  "block.mtrfranceaddon.sncf_logo_actuel_block": "Aktueller SNCF Logo Block",
+  "block.mtrfranceaddon.sncf_logo_1938-1947_block": "Erster SNCF Logo von 1938 bis 1947",
+  "block.mtrfranceaddon.sncf_logo_1947-1967_block": "Zweiter SNCF Logo von 1947 bis 1967",
+  "block.mtrfranceaddon.sncf_logo_1967-1985_block_v1": "Dritter SNCF Logo von 1967 bis 1985 (schwarz)",
+  "block.mtrfranceaddon.sncf_logo_1967-1985_block_v2": "Dritter SNCF Logo von 1967 bis 1985 (blau)",
+  "block.mtrfranceaddon.sncf_logo_1985-1992_block_v1": "Vierter SNCF Logo von 1985 bis 1992 (schwarz)",
+  "block.mtrfranceaddon.sncf_logo_1985-1992_block_v2": "Vierter SNCF Logo von 1985 bis 1992 (blau)",
+  "block.mtrfranceaddon.sncf_logo_1992-2005_block": "Fünfter SNCF Logo von 1992 bis 2005",
+  "block.mtrfranceaddon.ratp_logo_actuel_block": "Aktueller RATP Logo Block",
+  "block.mtrfranceaddon.ratp_logo_1951-1960_block": "Erster RATP Logo von 1951 1960",
+  "block.mtrfranceaddon.ratp_logo_1960-1976_block": "Zweiter RATP Logo von 1960 bis 1976",
+  "block.mtrfranceaddon.ratp_logo_1976-1992_block": "Dritter RATP Logo von 1976 bis 1992",
+  "itemGroup.mtrfranceaddon.mtrfranceaddon_group": "MTR Frankreich Add-on",
+  "block.mtrfranceaddon.invisible_platform": "Gatter Plattform",
+  "block.mtrfranceaddon.ratp_platform": "RATP Plattform",
+  "block.mtrfranceaddon.sncf_platform": "Weiße SNCF Plattform",
+  "block.mtrfranceaddon.sncf2_platform": "Graue SNCF Plattform",
+  "block.mtrfranceaddon.ratp_platform_indented": "RATP Plattform",
+  "block.mtrfranceaddon.sncf_platform_indented": "Weiße SNCF Plattform",
   "block.mtrfranceaddon.sncf2_platform_indented": "Plattform Graue SNCF",
-  "item.mtrfranceaddon.rail_connector_oneway": "Eisenbahnverbinder (%s km/h) (eine Richtung)"
+  "item.mtrfranceaddon.rail_connector_base": "Bahnstecker (%s km/h)",
+  "item.mtrfranceaddon.rail_connector_oneway": "Bahnstecker (%s km/h) (Eine Richtung)"
 }
