@@ -1,3 +1,6 @@
 {
-  "parent": "mtrfranceaddon:block/sncf_logo_1985-1992_block_v1"
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "mtrfranceaddon:block/sncf_logo_1985-1992_block_v1"
+  }
 }

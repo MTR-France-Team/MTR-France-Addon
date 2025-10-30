@@ -1,6 +1,6 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "mtrfranceaddon:block/sign",
   "textures": {
-    "all": "mtrfranceaddon:block/sncf_logo_1947-1967_block"
+    "front": "mtrfranceaddon:block/sncf_logo_1947-1967_block"
   }
 }

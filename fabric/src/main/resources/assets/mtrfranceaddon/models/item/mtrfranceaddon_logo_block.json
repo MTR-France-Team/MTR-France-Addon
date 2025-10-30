@@ -1,3 +1,6 @@
 {
-  "parent": "mtrfranceaddon:block/mtrfranceaddon_logo_block"
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "mtrfranceaddon:block/mtrfranceaddon_logo_block"
+  }
 }

@@ -1,19 +1,19 @@
 package fr.mtrfranceaddon.mod.common.block;
 
-import fr.mtrfranceaddon.mod.common.block.base.MTRFranceAddonBlock;
-import org.mtr.mapping.holder.BlockSettings;
+import fr.mtrfranceaddon.mod.common.block.base.DirectionalBlock;
+import org.jetbrains.annotations.NotNull;
+import org.mtr.mapping.holder.*;
+import org.mtr.mod.block.IBlock;
 
-public class LogoBlock extends MTRFranceAddonBlock {
-
-    /**
-     * The constructor contains only the properties of the block (material, durability...)
-     * @param settings Properties of the bloc
-     */
+public class LogoBlock extends DirectionalBlock {
+    
     public LogoBlock(BlockSettings settings) {
-        super(settings);
+        super(settings.nonOpaque());
     }
 
-    // Here you can add different methods if the block has a special behaviour
-    // Example: createBlockEntity(), onUse()...
-
+    @Override
+    public @NotNull VoxelShape getOutlineShape2(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
+        final Direction facing = IBlock.getStatePropertySafe(state, FACING);
+        return IBlock.getVoxelShapeByDirection(0, 0, 15, 16, 16, 16, facing);
+    }
 }

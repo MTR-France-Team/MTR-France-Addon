@@ -10,7 +10,7 @@ public class Constants {
 
     public static final String MOD_ID = "mtrfranceaddon";
     public static final String MOD_NAME = "MTR France Addon";
-    public static final String MOD_VERSION = "1.0.0";
+    public static final String MOD_VERSION = "1.1.0";
 
     /**
      * Method to create an Identifier based on the MOD_ID.
