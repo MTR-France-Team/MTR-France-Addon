@@ -1,9 +1,9 @@
 {
   "variants": {
-    "facing=north": { "model": "mtrfranceaddon:block/ratp_platform" },
-    "facing=east":  { "model": "mtrfranceaddon:block/ratp_platform", "y":  90 },
-    "facing=south": { "model": "mtrfranceaddon:block/ratp_platform", "y": 180 },
-    "facing=west":  { "model": "mtrfranceaddon:block/ratp_platform", "y": 270 }
+    "facing=north": { "model": "mtrfranceaddon:block/ratp_logo_actuel_block" },
+    "facing=east":  { "model": "mtrfranceaddon:block/ratp_logo_actuel_block", "y":  90 },
+    "facing=south": { "model": "mtrfranceaddon:block/ratp_logo_actuel_block", "y": 180 },
+    "facing=west":  { "model": "mtrfranceaddon:block/ratp_logo_actuel_block", "y": 270 }
   }
 }
 

@@ -2,10 +2,7 @@ package fr.mtrfranceaddon.mod.common;
 
 import fr.mtrfranceaddon.mod.common.registry.MTRFranceAddonRegistry;
 import fr.mtrfranceaddon.mod.common.registry.MTRFranceAddonRegistryClient;
-import fr.mtrfranceaddon.mod.common.registry.ModBlocks;
 import fr.mtrfranceaddon.mod.common.util.Constants;
-import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
-import net.minecraft.client.render.RenderLayer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
