@@ -1,5 +1,9 @@
 {
   "variants": {
-    "": { "model": "mtrfranceaddon:block/sncf_logo_1985-1992_block_v2" }
+    "facing=north": { "model": "mtrfranceaddon:block/sncf_logo_1985-1992_block_v2" },
+    "facing=east":  { "model": "mtrfranceaddon:block/sncf_logo_1985-1992_block_v2", "y":  90 },
+    "facing=south": { "model": "mtrfranceaddon:block/sncf_logo_1985-1992_block_v2", "y": 180 },
+    "facing=west":  { "model": "mtrfranceaddon:block/sncf_logo_1985-1992_block_v2", "y": 270 }
   }
 }
+

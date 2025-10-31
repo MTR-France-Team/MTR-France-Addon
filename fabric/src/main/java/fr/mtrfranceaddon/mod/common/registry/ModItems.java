@@ -3,13 +3,8 @@ package fr.mtrfranceaddon.mod.common.registry;
 import fr.mtrfranceaddon.mod.common.Init;
 import fr.mtrfranceaddon.mod.common.data.CustomRailData;
 import fr.mtrfranceaddon.mod.common.item.*;
-import fr.mtrfranceaddon.mod.common.util.Constants;
-import org.mtr.mapping.holder.BlockItem;
 import org.mtr.mapping.holder.Item;
-import org.mtr.mapping.holder.ItemSettings;
-import org.mtr.mapping.registry.CreativeModeTabHolder;
 import org.mtr.mapping.registry.ItemRegistryObject;
-import org.mtr.mod.CreativeModeTabs;
 import org.mtr.mod.data.RailType;
 
 import java.util.HashMap;

@@ -1,6 +1,6 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "mtrfranceaddon:block/sign",
   "textures": {
-    "all": "mtrfranceaddon:block/mtrfranceaddon_logo_block"
+    "front": "mtrfranceaddon:block/mtrfranceaddon_logo_block"
   }
 }

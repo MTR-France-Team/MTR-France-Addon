@@ -1,3 +1,6 @@
 {
-  "parent": "mtrfranceaddon:block/ratp_logo_1951-1960_block"
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "mtrfranceaddon:block/ratp_logo_1951-1960_block"
+  }
 }

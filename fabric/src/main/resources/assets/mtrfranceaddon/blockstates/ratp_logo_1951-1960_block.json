@@ -1,5 +1,10 @@
+
 {
   "variants": {
-    "": { "model": "mtrfranceaddon:block/ratp_logo_1951-1960_block" }
+    "facing=north": { "model": "mtrfranceaddon:block/ratp_logo_1951-1960_block" },
+    "facing=east":  { "model": "mtrfranceaddon:block/ratp_logo_1951-1960_block", "y":  90 },
+    "facing=south": { "model": "mtrfranceaddon:block/ratp_logo_1951-1960_block", "y": 180 },
+    "facing=west":  { "model": "mtrfranceaddon:block/ratp_logo_1951-1960_block", "y": 270 }
   }
 }
+
