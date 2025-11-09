@@ -1,1 +1,25 @@
-{}
+{
+  "block.mtrfranceaddon.mtrfranceaddon_logo_block": "MTR Frankrijk Addon logo",
+  "block.mtrfranceaddon.sncf_logo_actuel_block": "Huidig ​​SNCF logo blok",
+  "block.mtrfranceaddon.sncf_logo_1938-1947_block": "SNCF 1e logo van 1938 tot 1947",
+  "block.mtrfranceaddon.sncf_logo_1947-1967_block": "SNCF 2e logo van 1947 tot 1967",
+  "block.mtrfranceaddon.sncf_logo_1967-1985_block_v1": "SNCF 3e logo van 1967 tot 1985 (zwart)",
+  "block.mtrfranceaddon.sncf_logo_1967-1985_block_v2": "SNCF 3e logo van 1967 tot 1985 (blauw)",
+  "block.mtrfranceaddon.sncf_logo_1985-1992_block_v1": "SNCF 4e logo van 1985 tot 1992 (zwart)",
+  "block.mtrfranceaddon.sncf_logo_1985-1992_block_v2": "SNCF 4e logo van 1985 tot 1992 (blauw)",
+  "block.mtrfranceaddon.sncf_logo_1992-2005_block": "SNCF 5e logo van 1992 tot 2005",
+  "block.mtrfranceaddon.ratp_logo_actuel_block": "Echt RATP logo blok",
+  "block.mtrfranceaddon.ratp_logo_1951-1960_block": "RATP 1e logo van 1951 tot 1960",
+  "block.mtrfranceaddon.ratp_logo_1960-1976_block": "RATP 2e logo van 1960 tot 1976",
+  "block.mtrfranceaddon.ratp_logo_1976-1992_block": "RATP 3e logo van 1976 tot 1992",
+  "itemGroup.mtrfranceaddon.mtrfranceaddon_group": "MTR Frankrijk Addon",
+  "block.mtrfranceaddon.invisible_platform": "Spoor barrière",
+  "block.mtrfranceaddon.ratp_platform": "RATP spoor",
+  "block.mtrfranceaddon.sncf_platform": "Wit SNCF spoor",
+  "block.mtrfranceaddon.sncf2_platform": "Grijs SNCF spoor",
+  "block.mtrfranceaddon.ratp_platform_indented": "RATP spoor",
+  "block.mtrfranceaddon.sncf_platform_indented": "Witte SNCF spoor",
+  "block.mtrfranceaddon.sncf2_platform_indented": "Grijs SNCF spoor",
+  "item.mtrfranceaddon.rail_connector_base": "Rail connector (%s km/u)",
+  "item.mtrfranceaddon.rail_connector_oneway": "Rail connector (%s km/u) (enkele reis)"
+}
