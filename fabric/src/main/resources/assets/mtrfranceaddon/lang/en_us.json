@@ -110,6 +110,6 @@
   "block.mtrfranceaddon.threehundredgallows": "300 km/h sign for signaling gallows",
   "block.mtrfranceaddon.squaregallows": "Square sign for signaling gallows",
 
-  "itemgroup.mtrfranceaddon.sign_group": "MTR Sign",
+  "itemGroup.mtrfranceaddon.sign_group": "MTR Sign",
   "itemGroup.mtrfranceaddon.mtrfranceaddon_group": "MTR France Addon"
 }

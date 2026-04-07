@@ -11,17 +11,18 @@ public class CustomItemRailModifier extends ItemRailModifier {
 
     private final int speed;
     private final boolean isOneWay;
+    private final String translationKey;
 
     public CustomItemRailModifier(boolean isOneWay, RailType railType, int speed, ItemSettings itemSettings) {
         super(true, false, false, isOneWay, railType, itemSettings);
         this.speed = speed;
         this.isOneWay = isOneWay;
+        this.translationKey = "item.mtrfranceaddon.rail_connector_" + (this.isOneWay ? "oneway" : "base");
     }
 
     @Override
     public Text getName2(ItemStack stack) {
-        String translationKey = "item.mtrfranceaddon.rail_connector_" + (this.isOneWay ? "oneway" : "base");
-        return Text.cast(TextHelper.translatable(translationKey, speed));
+        return Text.cast(TextHelper.translatable(this.translationKey, speed));
     }
 
 }

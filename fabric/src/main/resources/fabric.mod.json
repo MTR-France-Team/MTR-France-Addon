@@ -11,7 +11,7 @@
     "issues": "https://github.com/mtr-france-team/mtr-france-addon/issues"
   },
   "license": "MIT",
-  "icon": "assets/mtrfranceaddon:icon.png",
+  "icon": "assets/mtrfranceaddon/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": ["fr.mtrfranceaddon.fabric.MTRFranceAddonFabric"],

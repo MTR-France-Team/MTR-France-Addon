@@ -6,7 +6,7 @@ license = "MIT"
 modId = "mtrfranceaddon"
 version = "${mod_version}"
 displayName = "MTR France Addon"
-description = '''This addon is provided to give French Railway content to players through the Minecraft Transit Railway mod by jonafanho.\nCet addon fourni un panel d'éléments du rail français aux joueurs au travers du mod Minecraft Transit Railway par jonafanho.\n\nCreated by the french community - Créer par la communauté française.'''
+description = '''This addon is provided to give French Railway content to players through the Minecraft Transit Railway mod by jonafanho.\nCet addon fourni un panel d\'éléments du rail français aux joueurs au travers du mod Minecraft Transit Railway par jonafanho.\n\nCreated by the french community - Créer par la communauté française.'''
 authors = "Team MTR France"
 
 [[dependencies.mtrfranceaddon]]
@@ -19,13 +19,13 @@ side = "BOTH"
 [[dependencies.mtrfranceaddon]]
 modId = "minecraft"
 mandatory = true
-versionRange = "[${minecraft_version},)"
+versionRange = "[${minecraft_version}]"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.mtrfranceaddon]]
 modId = "mtr"
 mandatory = true
-versionRange = "[4.0.0,)"
+versionRange = "[4.0,4.1)"
 ordering = "AFTER"
 side = "BOTH"

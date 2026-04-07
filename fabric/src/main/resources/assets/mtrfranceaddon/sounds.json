@@ -65,50 +65,50 @@
   "ratp_pickpocket2": {
     "sounds": ["mtrfranceaddon:ratp/pickpocket2"]
   },
-  "ratp_14_Old_Jingle": {
-    "sounds": ["mtrfranceaddon:ratp/Ligne_14/14_Old_Jingle"]
+  "ratp_14_old_jingle": {
+    "sounds": ["mtrfranceaddon:ratp/ligne_14/14_old_jingle"]
   },
-  "ratp_14_Bercy": {
-    "sounds": ["mtrfranceaddon:ratp/Ligne_14/14_Bercy"]
+  "ratp_14_bercy": {
+    "sounds": ["mtrfranceaddon:ratp/ligne_14/14_bercy"]
   },
-  "ratp_14_Bibliotheque_Francois_Mitterrand": {
-    "sounds": ["mtrfranceaddon:ratp/Ligne_14/14_Bibliotheque_Francois_Mitterrand"]
+  "ratp_14_bibliotheque_francois_mitterrand": {
+    "sounds": ["mtrfranceaddon:ratp/ligne_14/14_bibliotheque_francois_mitterrand"]
   },
-  "ratp_14_Chatelet": {
-    "sounds": ["mtrfranceaddon:ratp/Ligne_14/14_Chatelet"]
+  "ratp_14_chatelet": {
+    "sounds": ["mtrfranceaddon:ratp/ligne_14/14_chatelet"]
   },
-  "ratp_14_Cour_St_Emilion": {
-    "sounds": ["mtrfranceaddon:ratp/Ligne_14/14_Cour_St_Emilion"]
+  "ratp_14_cour_st_emilion": {
+    "sounds": ["mtrfranceaddon:ratp/ligne_14/14_cour_st_emilion"]
   },
-  "ratp_14_Gare_De_Lyon": {
-    "sounds": ["mtrfranceaddon:ratp/Ligne_14/14_Gare_De_Lyon"]
+  "ratp_14_gare_de_lyon": {
+    "sounds": ["mtrfranceaddon:ratp/ligne_14/14_gdl"]
   },
-  "ratp_14_Madelaine": {
-    "sounds": ["mtrfranceaddon:ratp/Ligne_14/14_Madelaine"]
+  "ratp_14_madelaine": {
+    "sounds": ["mtrfranceaddon:ratp/ligne_14/14_madelaine"]
   },
-  "ratp_14_Olympiades": {
-    "sounds": ["mtrfranceaddon:ratp/Ligne_14/14_Olympiades"]
+  "ratp_14_olympiades": {
+    "sounds": ["mtrfranceaddon:ratp/ligne_14/14_olympiades"]
   },
-  "ratp_14_Pyramides": {
-    "sounds": ["mtrfranceaddon:ratp/Ligne_14/14_Pyramides"]
+  "ratp_14_pyramides": {
+    "sounds": ["mtrfranceaddon:ratp/ligne_14/14_pyramides"]
   },
-  "ratp_14_Saint_Lazare": {
-    "sounds": ["mtrfranceaddon:ratp/Ligne_14/14_Saint_Lazar"]
+  "ratp_14_saint_lazare": {
+    "sounds": ["mtrfranceaddon:ratp/ligne_14/14_saint_lazare"]
   },
-  "ratp_14_Terminus": {
-    "sounds": ["mtrfranceaddon:ratp/Ligne_14/14_Terminus"]
+  "ratp_14_terminus": {
+    "sounds": ["mtrfranceaddon:ratp/ligne_14/14_terminus"]
   },
-  "ratp_14_Mairie_de_Saint_Ouen": {
-    "sounds": ["mtrfranceaddon:ratp/Ligne_14/14_Marie_de_Saint_Ouen"]
+  "ratp_14_mairie_de_saint_ouen": {
+    "sounds": ["mtrfranceaddon:ratp/ligne_14/14_marie_de_st_ouen"]
   },
-  "ratp_14_Pont_Cardinet": {
-    "sounds": ["mtrfranceaddon:ratp/Ligne_14/14_Pont_Cardinet"]
+  "ratp_14_pont_cardinet": {
+    "sounds": ["mtrfranceaddon:ratp/ligne_14/14_pont_cardinet"]
   },
-  "ratp_14_Saint_Ouen": {
-    "sounds": ["mtrfranceaddon:ratp/Ligne_14/14_Saint_Ouen"]
+  "ratp_14_saint_ouen": {
+    "sounds": ["mtrfranceaddon:ratp/ligne_14/14_st_ouen"]
   },
-  "ratp_14_Porte_de_Clichy": {
-    "sounds": ["mtrfranceaddon:ratp/Ligne_14/14_Porte_de_Clichy"]
+  "ratp_14_porte_de_clichy": {
+    "sounds": ["mtrfranceaddon:ratp/ligne_14/14_porte_de_clichy"]
   },
   "rtm_jingle": {
     "sounds": ["mtrfranceaddon:rtm/jingle"]
@@ -116,13 +116,13 @@
   "sncf_jingle_station": {
     "sounds": ["mtrfranceaddon:sncf/jingle2"]
   },
-  "sncf_jingle_TER": {
+  "sncf_jingle_ter": {
     "sounds": ["mtrfranceaddon:sncf/jingle3"]
   },
   "sncf_circulation_interrompus": {
     "sounds": ["mtrfranceaddon:sncf/circulation_interrompus"]
   },
-  "sncf_jingle_TGV": {
+  "sncf_jingle_tgv": {
     "sounds": ["mtrfranceaddon:sncf/jingle1"]
   },
   "stib_jingle": {

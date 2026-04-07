@@ -62,7 +62,7 @@ jar {
 remapJar {
     dependsOn(shadowJar)
     mustRunAfter(shadowJar)
-    inputFile = file(shadowJar.archivePath)
+    inputFile = shadowJar.archiveFile
 }
 
 // Copie le JAR final
@@ -99,5 +99,5 @@ repositories {
             includeGroup "maven.modrinth"
         }
     }
-    maven { url "https://jitpack.io" }
+    maven { url = "https://jitpack.io" }
 }

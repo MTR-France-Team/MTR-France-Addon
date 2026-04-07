@@ -7,8 +7,10 @@ configure(subprojects) {
     apply plugin: "java"
     apply plugin: 'com.gradleup.shadow'
 
-    group project.maven_group
-    version "${rootProject.properties.mod_version}+${rootProject.properties.minecraft_version}"
+    group = project.maven_group
+
+    def modSuffix = project.findProperty('mod_suffix') ? "-${project.mod_suffix}" : ""
+    version = "${rootProject.properties.mod_version}+${rootProject.properties.minecraft_version}${modSuffix}"
 
     configurations {
         shadowImplementation
@@ -24,11 +26,13 @@ configure(subprojects) {
     }
 
     repositories {
-        maven { url "https://jitpack.io" }
+        maven { url = "https://jitpack.io" }
     }
 
     shadowJar {
         configurations = [project.configurations.shadowImplementation]
+        includeEmptyDirs = true
+        dirMode = 0755
     }
 
     // Calcul de la version Java
@@ -116,4 +120,18 @@ tasks.register("setupFiles") {
             }
         }
     }
+}
+
+tasks.register('buildUniversalResourcePack', Zip) {
+    group = "build"
+    description = "Generate ResourcePack ZIP (1.16.5 - 1.20.4)"
+
+    archiveFileName = "MTR-France-Addon-Assets-Universal-${rootProject.properties.mod_version}${modSuffix}.zip"
+    destinationDirectory = file("$rootDir/releases")
+
+    from project(":fabric").sourceSets.main.resources
+    include "assets/**"
+    include "pack.mcmeta"
+
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 }

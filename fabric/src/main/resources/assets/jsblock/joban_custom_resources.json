@@ -83,6 +83,13 @@
       "name": "[IDF] IENA Desserte (temps départ)",
       "thumbnail": "jsblock:idf/images/backgrounds/iena3.png",
       "scriptFiles": ["jsblock:idf/scripts/iena3_depart.js"]
+    },
+    {
+      "id": "aca_IDF_RER",
+      "name": "[ACA:IDF][Preview] RER Display",
+      "thumbnail": "jsblock:acat/thumbnails/rer.png",
+      "scriptFiles": ["jsblock:acat/idf/scripts/rer.js"],
+      "blacklist": ["lcd_pids"]
     }
   ]
 }

@@ -1,9 +1,12 @@
 package fr.mtrfranceaddon.mod.common.registry;
 
+import fr.mtrfranceaddon.mod.common.entity.SeatEntity;
 import fr.mtrfranceaddon.mod.common.util.Constants;
 import org.mtr.mapping.holder.*;
+import org.mtr.mapping.mapper.EntityExtension;
 import org.mtr.mapping.registry.*;
 
+import java.util.function.BiFunction;
 import java.util.function.Function;
 import java.util.function.Supplier;
 
@@ -15,6 +18,7 @@ public class MTRFranceAddonRegistry {
         setupPacket();
         ModBlocks.register();
         ModBlockEntities.register();
+        ModEntities.register();
         ModEvents.register();
         ModItems.register();
         ModNetworking.register();
@@ -47,6 +51,14 @@ public class MTRFranceAddonRegistry {
      */
     public static ItemRegistryObject registerItem(String id, Function<ItemSettings, Item> callback, CreativeModeTabHolder itemGroup) {
         return REGISTRY.registerItem(Constants.id(id), callback, itemGroup);
+    }
+
+    public static <T extends EntityExtension> EntityTypeRegistryObject<T> registerEntity(String id, BiFunction<EntityType<?>, World, T> factory, float width, float height) {
+        return (EntityTypeRegistryObject<T>) REGISTRY.registerEntityType(
+                Constants.id(id),
+                (type, world) -> factory.apply(new EntityType<>(type.data), world),
+                width, height
+        );
     }
 
 }

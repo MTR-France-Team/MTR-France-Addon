@@ -132,7 +132,9 @@ function drawSimpleStationList(ctx, stations) {
 }
 
 function drawPaginatedStationList(ctx, stations) {
-    // Draw page indicator
+    const time = Date.now();
+    const pageIndex = Math.floor(time / 5000) % 2;
+
     Text.create("Page Label")
         .text("Page")
         .color(0xFFFFFF)
@@ -141,40 +143,40 @@ function drawPaginatedStationList(ctx, stations) {
         .draw(ctx);
 
     Text.create("Page Number")
-        .text(TextUtil.cycleString("1/2|2/2"))
+        .text((pageIndex + 1) + "/2")
         .color(0xFFFFFF)
         .scale(0.4)
         .pos(34, 37)
         .draw(ctx);
 
-    // First column with pagination
-    for (let i = 0; i < Math.min(stations.length, 6); i++) {
-        const page1Text = stations[i];
-        const page2Text = (stations[i + 12] || " ");
+    const startIndex = pageIndex * 12;
 
-        Text.create("Station Page Col1 " + i)
-            .text(TextUtil.cycleString(page1Text + "|" + page2Text))
-            .color(0xFFFFFF)
-            .scale(0.6)
-            .size(60, 8)
-            .stretchXY()
-            .pos(51, 32 + 7.4 * i)
-            .draw(ctx);
+    for (let i = 0; i < 6; i++) {
+        const stationIndex = startIndex + i;
+        if (stationIndex < stations.length) {
+            Text.create("Station Page Col1 " + i)
+                .text(stations[stationIndex])
+                .color(0xFFFFFF)
+                .scale(0.6)
+                .size(60, 8)
+                .stretchXY()
+                .pos(51, 32 + 7.4 * i)
+                .draw(ctx);
+        }
     }
 
-    // Second column with pagination
-    for (let i = 0; i < Math.min(stations.length - 6, 6); i++) {
-        const page1TextB = stations[i + 6];
-        const page2TextB = (stations[i + 18] || " ");
-
-        Text.create("Station Page Col2 " + i)
-            .text(TextUtil.cycleString(page1TextB + "|" + page2TextB))
-            .color(0xFFFFFF)
-            .scale(0.6)
-            .size(60, 8)
-            .stretchXY()
-            .pos(95, 32 + 7.4 * i)
-            .draw(ctx);
+    for (let i = 0; i < 6; i++) {
+        const stationIndex = startIndex + 6 + i;
+        if (stationIndex < stations.length) {
+            Text.create("Station Page Col2 " + i)
+                .text(stations[stationIndex])
+                .color(0xFFFFFF)
+                .scale(0.6)
+                .size(60, 8)
+                .stretchXY()
+                .pos(95, 32 + 7.4 * i)
+                .draw(ctx);
+        }
     }
 }
 

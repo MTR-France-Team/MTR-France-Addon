@@ -30,7 +30,6 @@ function drawArrivals(ctx, pids) {
         }
     }
 
-    // If no arrivals, show "quai non desservi" background
     if (!hasActiveArrivals) {
         Texture.create("No Service Background")
             .texture("jsblock:idf/images/backgrounds/iena1_quai_non_desservi.png")
@@ -40,38 +39,28 @@ function drawArrivals(ctx, pids) {
 }
 
 function drawArrivalRow(ctx, pids, arrival, rowIndex) {
-    const rowY = rowIndex * 16 + 3.5;
+    const rowY = (ctx.canvas, rowIndex * 16 + 3.5);
     const routeInfo = TrainUtils.getRouteInfo(arrival);
 
-    // Draw line icon
-    drawLineIcon(ctx, routeInfo, rowY);
+    drawLineIcon(ctx, routeInfo, rowY, rowIndex);
+    drawMissionNumber(ctx, routeInfo, rowY, rowIndex);
+    drawDestination(ctx, arrival, rowY, rowIndex);
+    drawPlatform(ctx, pids, arrival, rowY, rowIndex);
 
-    // Draw mission number
-    drawMissionNumber(ctx, routeInfo, rowY);
-
-    // Draw destination
-    drawDestination(ctx, arrival, rowY);
-
-    // Draw platform
-    drawPlatform(ctx, pids, arrival, rowY);
-
-    // Draw ETA
-    drawETA(ctx, pids, arrival, rowY);
+    if (typeof drawETA !== 'undefined') drawETA(ctx, pids, arrival, rowY, rowIndex);
 }
 
-function drawLineIcon(ctx, routeInfo, rowY) {
-    // Use parts[2] for line if available, otherwise use trainType
+function drawLineIcon(ctx, routeInfo, rowY, rowIndex) {
     const line = (routeInfo.parts.length > 2 ? routeInfo.parts[2] : routeInfo.trainType).toLowerCase();
-
-    Texture.create("Line Icon")
+    Texture.create("Line Icon " + rowIndex)
         .texture("jsblock:idf/images/line_icons/line_" + line + ".png")
         .pos(2, rowY - 0.5)
         .size(9, 9)
         .draw(ctx);
 }
 
-function drawMissionNumber(ctx, routeInfo, rowY) {
-    Text.create("Mission")
+function drawMissionNumber(ctx, routeInfo, rowY, rowIndex) {
+    Text.create("Mission " + rowIndex)
         .text(routeInfo.trainNumber)
         .color(0xFFFFFF)
         .scale(0.6)
@@ -81,10 +70,9 @@ function drawMissionNumber(ctx, routeInfo, rowY) {
         .draw(ctx);
 }
 
-function drawDestination(ctx, arrival, rowY) {
+function drawDestination(ctx, arrival, rowY, rowIndex) {
     const destination = arrival.destination() || "Destination inconnue";
-
-    Text.create("Arrival Destination")
+    Text.create("Arrival Destination " + rowIndex)
         .text(destination)
         .color(0xFFFFFF)
         .pos(27, rowY)
@@ -93,10 +81,9 @@ function drawDestination(ctx, arrival, rowY) {
         .draw(ctx);
 }
 
-function drawPlatform(ctx, pids, arrival, rowY) {
+function drawPlatform(ctx, pids, arrival, rowY, rowIndex) {
     const platform = arrival.platformName() || "?";
-
-    Text.create("Platform Number")
+    Text.create("Platform Number " + rowIndex)
         .text(platform)
         .pos(pids.width - 8.5, rowY + 1)
         .centerAlign()
@@ -105,19 +92,11 @@ function drawPlatform(ctx, pids, arrival, rowY) {
         .draw(ctx);
 }
 
-function drawETA(ctx, pids, arrival, rowY) {
+function drawETA(ctx, pids, arrival, rowY, rowIndex) {
     const eta = Math.ceil((arrival.arrivalTime() - Date.now()) / 60000);
-    let etaText;
+    let etaText = eta <= 0 ? "À quai" : eta <= 1 ? "À l'approche" : eta + " min";
 
-    if (eta <= 0) {
-        etaText = "À quai";
-    } else if (eta <= 1) {
-        etaText = "À l'approche";
-    } else {
-        etaText = eta + " min";
-    }
-
-    Text.create("ETA Text")
+    Text.create("ETA Text " + rowIndex)
         .text(etaText)
         .color(0xFFFFFF)
         .size(25, 9)

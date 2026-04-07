@@ -1,7 +1,4 @@
 plugins {
-    id 'eclipse'
-    id 'idea'
-    id 'maven-publish'
     id 'net.minecraftforge.gradle' version '[6.0.16,6.2)'
     id "org.spongepowered.mixin" version "+"
 }
@@ -13,11 +10,13 @@ minecraft {
             property "forge.logging.markers", "REGISTRIES"
             property "forge.logging.console.level", "debug"
         }
-        client {
-            property 'forge.enabledGameTestNamespaces', archives_base_name
-        }
+        client {}
         server { args "--nogui" }
     }
+}
+
+jar {
+    archiveClassifier = 'slim'
 }
 
 sourceSets.main.resources { srcDir "src/generated/resources" }
@@ -62,15 +61,23 @@ java {
     withSourcesJar()
 }
 
-artifacts {
-    archives jar
+shadowJar {
+    archiveClassifier = 'shadowed'
+    configurations = [project.configurations.shadowImplementation]
 }
+
+jarJar.enable()
 
 reobf {
     shadowJar {}
 }
 
-assemble.dependsOn(shadowJar)
+tasks.named('jarJar') {
+    archiveClassifier = ''
+    dependsOn('reobfShadowJar')
+    from(provider { zipTree(tasks.shadowJar.archiveFile) })
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
 
 tasks.register("moveBuild") {
     doLast {
@@ -78,7 +85,7 @@ tasks.register("moveBuild") {
             include "**/*forge*"
         }
         copy {
-            from "build/libs/MTRFranceAddon-forge-${version}-all.jar"
+            from "build/libs/MTRFranceAddon-forge-${version}.jar"
             into "../build"
             rename { fileName -> fileName.replace("-all", "") }
         }

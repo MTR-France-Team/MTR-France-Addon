@@ -25640,7 +25640,7 @@
     {
       "id": "sncf_logo",
       "textureResource": "mtr:mtr_france_sign/sncf_logo.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Bienvenue|Welcome|Bienvenida",
       "flipCustomText": false,
       "flipTexture": false,
@@ -25649,7 +25649,7 @@
     {
       "id": "sncf_logo_reverse",
       "textureResource": "mtr:mtr_france_sign/sncf_logo.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Bienvenue|Welcome|Bienvenida",
       "flipCustomText": true,
       "flipTexture": false,
@@ -25658,13 +25658,13 @@
     {
       "id": "sncf_logo_small",
       "textureResource": "mtr:mtr_france_sign/sncf_logo.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "train_logo",
       "textureResource": "mtr:mtr_france_sign/logo_train.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Train|Trains|Tren",
       "flipCustomText": false,
       "flipTexture": false,
@@ -25673,7 +25673,7 @@
     {
       "id": "train_logo_reverse",
       "textureResource": "mtr:mtr_france_sign/logo_train.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Train|Trains|Tren",
       "flipCustomText": true,
       "flipTexture": true,
@@ -25682,13 +25682,13 @@
     {
       "id": "train_logo_small",
       "textureResource": "mtr:mtr_france_sign/logo_train.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "metro_logo",
       "textureResource": "mtr:mtr_france_sign/logo_metro.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Metro",
       "flipCustomText": false,
       "flipTexture": false,
@@ -25697,7 +25697,7 @@
     {
       "id": "metro_logo_reverse",
       "textureResource": "mtr:mtr_france_sign/logo_metro.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Metro",
       "flipCustomText": true,
       "flipTexture": false,
@@ -25706,13 +25706,13 @@
     {
       "id": "metro_logo_small",
       "textureResource": "mtr:mtr_france_sign/logo_metro.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "rer_logo",
       "textureResource": "mtr:mtr_france_sign/logo_rer.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Rer",
       "flipCustomText": false,
       "flipTexture": false,
@@ -25721,7 +25721,7 @@
     {
       "id": "rer_logo_reverse",
       "textureResource": "mtr:mtr_france_sign/logo_rer.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Rer",
       "flipCustomText": true,
       "flipTexture": false,
@@ -25730,13 +25730,13 @@
     {
       "id": "rer_logo_small",
       "textureResource": "mtr:mtr_france_sign/logo_rer.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "logo_tickets",
       "textureResource": "mtr:mtr_france_sign/logo_tickets.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Billetterie|Tickets Office|Venta de billetes",
       "flipCustomText": false,
       "flipTexture": false,
@@ -25745,7 +25745,7 @@
     {
       "id": "logo_tickets_reverse",
       "textureResource": "mtr:mtr_france_sign/logo_tickets.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Billetterie|Tickets Office|Venta de billetes",
       "flipCustomText": true,
       "flipTexture": false,
@@ -25754,13 +25754,13 @@
     {
       "id": "logo_tickets_small",
       "textureResource": "mtr:mtr_france_sign/logo_tickets.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "autobus_logo",
       "textureResource": "mtr:mtr_france_sign/logo_autobus.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Autobus|Autobús",
       "flipCustomText": false,
       "flipTexture": false,
@@ -25769,7 +25769,7 @@
     {
       "id": "autobus_logo_reverse",
       "textureResource": "mtr:mtr_france_sign/logo_autobus.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Autobus|Autobús",
       "flipCustomText": true,
       "flipTexture": false,
@@ -25778,13 +25778,13 @@
     {
       "id": "autobus_logo_small",
       "textureResource": "mtr:mtr_france_sign/logo_autobus.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "taxi_logo",
       "textureResource": "mtr:mtr_france_sign/logo_taxi.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Taxi",
       "flipCustomText": false,
       "flipTexture": false,
@@ -25793,7 +25793,7 @@
     {
       "id": "taxi_logo_reverse",
       "textureResource": "mtr:mtr_france_sign/logo_taxi.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Taxi",
       "flipCustomText": true,
       "flipTexture": false,
@@ -25802,13 +25802,13 @@
     {
       "id": "taxi_logo_small",
       "textureResource": "mtr:mtr_france_sign/logo_taxi.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "logo_telecable",
       "textureResource": "mtr:mtr_france_sign/logo_telecable.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Téléphérique|Cable car|Teleférico",
       "flipCustomText": false,
       "flipTexture": false,
@@ -25817,7 +25817,7 @@
     {
       "id": "logo_telecable_reverse",
       "textureResource": "mtr:mtr_france_sign/logo_telecable.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Téléphérique|Cable car|Teleférico",
       "flipCustomText": true,
       "flipTexture": false,
@@ -25826,13 +25826,13 @@
     {
       "id": "logo_telecable_small",
       "textureResource": "mtr:mtr_france_sign/logo_telecable.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "logo_location_voiture",
       "textureResource": "mtr:mtr_france_sign/logo_location_voiture.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Location de voiture|Car rental|Alquiler de coches",
       "flipCustomText": false,
       "flipTexture": false,
@@ -25841,7 +25841,7 @@
     {
       "id": "logo_location_voiture_reverse",
       "textureResource": "mtr:mtr_france_sign/logo_location_voiture.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Location de voiture|Car rental|Alquiler de coches",
       "flipCustomText": true,
       "flipTexture": false,
@@ -25850,13 +25850,13 @@
     {
       "id": "logo_location_voiture_small",
       "textureResource": "mtr:mtr_france_sign/logo_location_voiture.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "logo_depose_minute",
       "textureResource": "mtr:mtr_france_sign/logo_depose_minute.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Dépose minute|Drop-off minute|Entrega de minutos",
       "flipCustomText": false,
       "flipTexture": false,
@@ -25865,7 +25865,7 @@
     {
       "id": "logo_depose_minute_reverse",
       "textureResource": "mtr:mtr_france_sign/logo_depose_minute.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Dépose minute|Drop-off minute|Entrega de minutos",
       "flipCustomText": true,
       "flipTexture": false,
@@ -25874,13 +25874,13 @@
     {
       "id": "logo_depose_minute_small",
       "textureResource": "mtr:mtr_france_sign/logo_depose_minute.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "logo_parking",
       "textureResource": "mtr:mtr_france_sign/logo_parking.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Parking|Aparcamiento",
       "flipCustomText": false,
       "flipTexture": false,
@@ -25889,7 +25889,7 @@
     {
       "id": "logo_parking_reverse",
       "textureResource": "mtr:mtr_france_sign/logo_parking.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Parking|Aparcamiento",
       "flipCustomText": true,
       "flipTexture": false,
@@ -25898,13 +25898,13 @@
     {
       "id": "logo_parking_small",
       "textureResource": "mtr:mtr_france_sign/logo_parking.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "logo_parking_moto",
       "textureResource": "mtr:mtr_france_sign/logo_parking_moto.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Parking Moto|Estacionamiento de motos",
       "flipCustomText": false,
       "flipTexture": false,
@@ -25913,7 +25913,7 @@
     {
       "id": "logo_parking_moto_reverse",
       "textureResource": "mtr:mtr_france_sign/logo_parking_moto.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Parking Moto|Estacionamiento de motos",
       "flipCustomText": true,
       "flipTexture": false,
@@ -25922,13 +25922,13 @@
     {
       "id": "logo_parking_moto_small",
       "textureResource": "mtr:mtr_france_sign/logo_parking_moto.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "logo_parking_velo",
       "textureResource": "mtr:mtr_france_sign/logo_parking_velo.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Parking Vélo|Estacionamiento de Vélos",
       "flipCustomText": false,
       "flipTexture": false,
@@ -25937,7 +25937,7 @@
     {
       "id": "logo_parking_velo_reverse",
       "textureResource": "mtr:mtr_france_sign/logo_parking_velo.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Parking Vélo|Estacionamiento de Vélos",
       "flipCustomText": true,
       "flipTexture": false,
@@ -25946,13 +25946,13 @@
     {
       "id": "logo_parking_velo_small",
       "textureResource": "mtr:mtr_france_sign/logo_parking_velo.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "logo_bus",
       "textureResource": "mtr:mtr_france_sign/logo_bus.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Bus",
       "flipCustomText": false,
       "flipTexture": false,
@@ -25961,7 +25961,7 @@
     {
       "id": "logo_bus_reverse",
       "textureResource": "mtr:mtr_france_sign/logo_bus.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Bus",
       "flipCustomText": true,
       "flipTexture": false,
@@ -25970,13 +25970,13 @@
     {
       "id": "logo_bus_small",
       "textureResource": "mtr:mtr_france_sign/logo_bus.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "logo_airport",
       "textureResource": "mtr:mtr_france_sign/logo_airport.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Aéroport|Airport|Aeropuerto",
       "flipCustomText": false,
       "flipTexture": false,
@@ -25985,7 +25985,7 @@
     {
       "id": "logo_airport_reverse",
       "textureResource": "mtr:mtr_france_sign/logo_airport.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Aéroport|Airport|Aeropuerto",
       "flipCustomText": true,
       "flipTexture": false,
@@ -25994,84 +25994,84 @@
     {
       "id": "logo_airport_small",
       "textureResource": "mtr:mtr_france_sign/logo_airport.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "logo_assenseur_small",
       "textureResource": "mtr:mtr_france_sign/assenseur.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "escalier_small",
       "textureResource": "mtr:mtr_france_sign/escalier.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "escalier_small_reverse",
       "textureResource": "mtr:mtr_france_sign/escalier.png",
-      "isSmall": false,
+      "small": false,
       "flipTexture": true,
       "backgroundColor": "181d30"
     },
     {
       "id": "escalator_small",
       "textureResource": "mtr:mtr_france_sign/escalator.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "escalator_small_reverse",
       "textureResource": "mtr:mtr_france_sign/escalator.png",
-      "isSmall": false,
+      "small": false,
       "flipTexture": true,
       "backgroundColor": "181d30"
     },
     {
       "id": "escalator_bas_small",
       "textureResource": "mtr:mtr_france_sign/escalator_bas.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "escalator_bas_small_reverse",
       "textureResource": "mtr:mtr_france_sign/escalator_bas.png",
-      "isSmall": false,
+      "small": false,
       "flipTexture": true,
       "backgroundColor": "181d30"
     },
     {
       "id": "handicap_small",
       "textureResource": "mtr:mtr_france_sign/handicap.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "handicap_reverse",
       "textureResource": "mtr:mtr_france_sign/handicap.png",
-      "isSmall": false,
+      "small": false,
       "flipTexture": true,
       "backgroundColor": "181d30"
     },
     {
       "id": "grande_pente_small",
       "textureResource": "mtr:mtr_france_sign/grande_pente.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "grande_pente_small_reverse",
       "textureResource": "mtr:mtr_france_sign/grande_pente.png",
-      "isSmall": false,
+      "small": false,
       "flipTexture": true,
       "backgroundColor": "181d30"
     },
     {
       "id": "assitance_voyageur_handicape",
       "textureResource": "mtr:mtr_france_sign/assitance_voyageur_handicape.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Assistance voyageur handicapé|Disabled traveler assistance|Asistencia para viajeros discapacitados",
       "flipCustomText": false,
       "flipTexture": false,
@@ -26080,7 +26080,7 @@
     {
       "id": "assitance_voyageur_handicape_reverse",
       "textureResource": "mtr:mtr_france_sign/assitance_voyageur_handicape.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Assistance voyageur handicapé|Disabled traveler assistance|Asistencia para viajeros discapacitados",
       "flipCustomText": true,
       "flipTexture": false,
@@ -26089,13 +26089,13 @@
     {
       "id": "assitance_voyageur_handicape_small",
       "textureResource": "mtr:mtr_france_sign/assitance_voyageur_handicape.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "conversion",
       "textureResource": "mtr:mtr_france_sign/conversion.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Conversion d'argent|Money conversion|Conversión de dinero",
       "flipCustomText": false,
       "flipTexture": false,
@@ -26104,7 +26104,7 @@
     {
       "id": "conversion_reverse",
       "textureResource": "mtr:mtr_france_sign/conversion.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Conversion d'argent|Money conversion|Conversión de dinero",
       "flipCustomText": true,
       "flipTexture": false,
@@ -26113,13 +26113,13 @@
     {
       "id": "conversion_small",
       "textureResource": "mtr:mtr_france_sign/conversion.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "information",
       "textureResource": "mtr:mtr_france_sign/information.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Information|Información",
       "flipCustomText": false,
       "flipTexture": false,
@@ -26128,7 +26128,7 @@
     {
       "id": "information_reverse",
       "textureResource": "mtr:mtr_france_sign/information.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Information|Información",
       "flipCustomText": true,
       "flipTexture": false,
@@ -26137,13 +26137,13 @@
     {
       "id": "information_small",
       "textureResource": "mtr:mtr_france_sign/information.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "information_trafic",
       "textureResource": "mtr:mtr_france_sign/information_trafic.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Information trafic|Información de tráfico",
       "flipCustomText": false,
       "flipTexture": false,
@@ -26152,7 +26152,7 @@
     {
       "id": "information_trafic_reverse",
       "textureResource": "mtr:mtr_france_sign/information_trafic.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Information trafic|Información de tráfico",
       "flipCustomText": true,
       "flipTexture": false,
@@ -26161,13 +26161,13 @@
     {
       "id": "information_trafic_small",
       "textureResource": "mtr:mtr_france_sign/information_trafic.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "devibrliateur",
       "textureResource": "mtr:mtr_france_sign/devibrliateur.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Défibrillateur|Defibrillator|Desfibrilador",
       "flipCustomText": false,
       "flipTexture": false,
@@ -26176,7 +26176,7 @@
     {
       "id": "devibrliateur_reverse",
       "textureResource": "mtr:mtr_france_sign/devibrliateur.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Défibrillateur|Defibrillator|Desfibrilador",
       "flipCustomText": true,
       "flipTexture": false,
@@ -26185,13 +26185,13 @@
     {
       "id": "devibrliateur_small",
       "textureResource": "mtr:mtr_france_sign/devibrliateur.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "logo_wc",
       "textureResource": "mtr:mtr_france_sign/logo_wc.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Toilettes|Bathroom|Baño",
       "flipCustomText": false,
       "flipTexture": false,
@@ -26200,7 +26200,7 @@
     {
       "id": "logo_wc_reverse",
       "textureResource": "mtr:mtr_france_sign/logo_wc.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Toilettes|Bathroom|Baño",
       "flipCustomText": true,
       "flipTexture": false,
@@ -26209,13 +26209,13 @@
     {
       "id": "logo_wc_small",
       "textureResource": "mtr:mtr_france_sign/logo_wc.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "logo_wc_handicape",
       "textureResource": "mtr:mtr_france_sign/logo_wc_handicape.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Toilettes Handicapé|Disabled Toilets|Baños Para Discapacitados",
       "flipCustomText": false,
       "flipTexture": false,
@@ -26224,7 +26224,7 @@
     {
       "id": "logo_wc_reverse_handicape",
       "textureResource": "mtr:mtr_france_sign/logo_wc_handicape.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Toilettes Handicapé|Disabled Toilets|Baños Para Discapacitados",
       "flipCustomText": true,
       "flipTexture": false,
@@ -26233,13 +26233,13 @@
     {
       "id": "logo_wc_small_handicape",
       "textureResource": "mtr:mtr_france_sign/logo_wc_handicape.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "logo_objet_trouve",
       "textureResource": "mtr:mtr_france_sign/objet_trouve.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Objet Trouvé|Lost and Found|Bperdido y Encontrado",
       "flipCustomText": false,
       "flipTexture": false,
@@ -26248,7 +26248,7 @@
     {
       "id": "logo_objet_trouve_reverse",
       "textureResource": "mtr:mtr_france_sign/objet_trouve.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Objet Trouvé|Lost and Found|Bperdido y Encontrado",
       "flipCustomText": true,
       "flipTexture": false,
@@ -26257,13 +26257,13 @@
     {
       "id": "logo_objet_trouve_small",
       "textureResource": "mtr:mtr_france_sign/objet_trouve.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "point_de_rasenblement",
       "textureResource": "mtr:mtr_france_sign/point_de_rasenblement.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Point de Rassemblement|Assembly Point|Punto de reunión",
       "flipCustomText": false,
       "flipTexture": false,
@@ -26272,7 +26272,7 @@
     {
       "id": "point_de_rasenblement_reverse",
       "textureResource": "mtr:mtr_france_sign/point_de_rasenblement.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Point de Rassemblement|Assembly Point|Punto de reunión",
       "flipCustomText": true,
       "flipTexture": false,
@@ -26281,13 +26281,13 @@
     {
       "id": "point_de_rasenblement_small",
       "textureResource": "mtr:mtr_france_sign/point_de_rasenblement.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "point_de_rencontre",
       "textureResource": "mtr:mtr_france_sign/point_de_rencontre.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Point de Rencontre|Meeting point|Punto de encuentro",
       "flipCustomText": false,
       "flipTexture": false,
@@ -26296,7 +26296,7 @@
     {
       "id": "point_de_rencontre_reverse",
       "textureResource": "mtr:mtr_france_sign/point_de_rencontre.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Point de Rencontre|Meeting point|Punto de encuentro",
       "flipCustomText": true,
       "flipTexture": false,
@@ -26305,13 +26305,13 @@
     {
       "id": "point_de_rencontre_small",
       "textureResource": "mtr:mtr_france_sign/point_de_rencontre.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "salle_attente",
       "textureResource": "mtr:mtr_france_sign/salle_attente.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Salle d'Attente|Waiting Room|Sala de espera",
       "flipCustomText": false,
       "flipTexture": false,
@@ -26320,7 +26320,7 @@
     {
       "id": "salle_attente_reverse",
       "textureResource": "mtr:mtr_france_sign/salle_attente.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Salle d'Attente|Waiting Room|Sala de espera",
       "flipCustomText": true,
       "flipTexture": false,
@@ -26329,13 +26329,13 @@
     {
       "id": "salle_attente_small",
       "textureResource": "mtr:mtr_france_sign/salle_attente.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "consigne",
       "textureResource": "mtr:mtr_france_sign/consigne.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Consigne|Baggage Room|Almacenamiento",
       "flipCustomText": false,
       "flipTexture": false,
@@ -26344,7 +26344,7 @@
     {
       "id": "consigne_reverse",
       "textureResource": "mtr:mtr_france_sign/consigne.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Consigne|Baggage Room|Almacenamiento",
       "flipCustomText": true,
       "flipTexture": false,
@@ -26353,13 +26353,13 @@
     {
       "id": "consigne_small",
       "textureResource": "mtr:mtr_france_sign/consigne.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "wifi_gratuit",
       "textureResource": "mtr:mtr_france_sign/wifi_gratuit.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Wifi Gratuit|Free Wifi|Wifi Gratis",
       "flipCustomText": false,
       "flipTexture": false,
@@ -26368,7 +26368,7 @@
     {
       "id": "wifi_gratuit_reverse",
       "textureResource": "mtr:mtr_france_sign/wifi_gratuit.png",
-      "isSmall": false,
+      "small": false,
       "customText": "Wifi Gratuit|Free Wifi|Wifi Gratis",
       "flipCustomText": true,
       "flipTexture": false,
@@ -26377,355 +26377,355 @@
     {
       "id": "wifi_gratuit_small",
       "textureResource": "mtr:mtr_france_sign/wifi_gratuit.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_a",
       "textureResource": "mtr:mtr_france_sign/voie_a.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_b",
       "textureResource": "mtr:mtr_france_sign/voie_b.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_c",
       "textureResource": "mtr:mtr_france_sign/voie_c.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_d",
       "textureResource": "mtr:mtr_france_sign/voie_d.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_e",
       "textureResource": "mtr:mtr_france_sign/voie_e.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_f",
       "textureResource": "mtr:mtr_france_sign/voie_f.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_g",
       "textureResource": "mtr:mtr_france_sign/voie_g.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_h",
       "textureResource": "mtr:mtr_france_sign/voie_h.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_i",
       "textureResource": "mtr:mtr_france_sign/voie_i.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_j",
       "textureResource": "mtr:mtr_france_sign/voie_j.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_k",
       "textureResource": "mtr:mtr_france_sign/voie_k.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_l",
       "textureResource": "mtr:mtr_france_sign/voie_l.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_m",
       "textureResource": "mtr:mtr_france_sign/voie_m.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_n",
       "textureResource": "mtr:mtr_france_sign/voie_n.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_o",
       "textureResource": "mtr:mtr_france_sign/voie_o.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_p",
       "textureResource": "mtr:mtr_france_sign/voie_p.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_q",
       "textureResource": "mtr:mtr_france_sign/voie_q.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_r",
       "textureResource": "mtr:mtr_france_sign/voie_r.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_s",
       "textureResource": "mtr:mtr_france_sign/voie_s.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_t",
       "textureResource": "mtr:mtr_france_sign/voie_t.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_u",
       "textureResource": "mtr:mtr_france_sign/voie_u.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_v",
       "textureResource": "mtr:mtr_france_sign/voie_v.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_w",
       "textureResource": "mtr:mtr_france_sign/voie_w.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_x",
       "textureResource": "mtr:mtr_france_sign/voie_x.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_y",
       "textureResource": "mtr:mtr_france_sign/voie_y.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_z",
       "textureResource": "mtr:mtr_france_sign/voie_z.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_0",
       "textureResource": "mtr:mtr_france_sign/voie_0.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_1",
       "textureResource": "mtr:mtr_france_sign/voie_1.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_2",
       "textureResource": "mtr:mtr_france_sign/voie_2.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_3",
       "textureResource": "mtr:mtr_france_sign/voie_3.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_4",
       "textureResource": "mtr:mtr_france_sign/voie_4.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_5",
       "textureResource": "mtr:mtr_france_sign/voie_5.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_6",
       "textureResource": "mtr:mtr_france_sign/voie_6.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_7",
       "textureResource": "mtr:mtr_france_sign/voie_7.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_8",
       "textureResource": "mtr:mtr_france_sign/voie_8.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_9",
       "textureResource": "mtr:mtr_france_sign/voie_9.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_10",
       "textureResource": "mtr:mtr_france_sign/voie_10.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_11",
       "textureResource": "mtr:mtr_france_sign/voie_11.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_12",
       "textureResource": "mtr:mtr_france_sign/voie_12.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_13",
       "textureResource": "mtr:mtr_france_sign/voie_13.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_14",
       "textureResource": "mtr:mtr_france_sign/voie_14.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_15",
       "textureResource": "mtr:mtr_france_sign/voie_15.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_16",
       "textureResource": "mtr:mtr_france_sign/voie_16.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_17",
       "textureResource": "mtr:mtr_france_sign/voie_17.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_18",
       "textureResource": "mtr:mtr_france_sign/voie_18.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_19",
       "textureResource": "mtr:mtr_france_sign/voie_19.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_20",
       "textureResource": "mtr:mtr_france_sign/voie_20.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_21",
       "textureResource": "mtr:mtr_france_sign/voie_21.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_22",
       "textureResource": "mtr:mtr_france_sign/voie_22.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_23",
       "textureResource": "mtr:mtr_france_sign/voie_23.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_24",
       "textureResource": "mtr:mtr_france_sign/voie_24.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_25",
       "textureResource": "mtr:mtr_france_sign/voie_25.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_26",
       "textureResource": "mtr:mtr_france_sign/voie_26.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_52",
       "textureResource": "mtr:mtr_france_sign/voie_52.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_53",
       "textureResource": "mtr:mtr_france_sign/voie_53.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_54",
       "textureResource": "mtr:mtr_france_sign/voie_54.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "voie_55",
       "textureResource": "mtr:mtr_france_sign/voie_55.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
       "id": "a_to",
       "textureResource": "mtr:mtr_france_sign/a_to.png",
-      "isSmall": false,
+      "small": false,
       "backgroundColor": "181d30"
     },
     {
@@ -27140,17 +27140,17 @@
     {
       "id": "nord_small",
       "textureResource": "mtr:mtr_france_sign/nord.png",
-      "isSmall": false
+      "small": false
     },
     {
       "id": "ouest_small",
       "textureResource": "mtr:mtr_france_sign/ouest.png",
-      "isSmall": false
+      "small": false
     },
     {
       "id": "sud_small",
       "textureResource": "mtr:mtr_france_sign/sud.png",
-      "isSmall": false
+      "small": false
     },
     {
       "id": "tram_small",
@@ -27165,7 +27165,7 @@
     {
       "id": "est_small",
       "textureResource": "mtr:mtr_france_sign/est.png",
-      "isSmall": false
+      "small": false
     },
     {
       "id": "transilien_small",
@@ -27988,7 +27988,7 @@
     },
     {
       "id": "rer_d_old",
-      "textureResource": "mtr:mtr_france_sign/rer_d.png_old",
+      "textureResource": "mtr:mtr_france_sign/rer_d_old.png",
       "customText": "Creil|Melun • Malesherbes • Corbeil-Essonnes",
       "flipCustomText": false,
       "small": true
@@ -28269,302 +28269,302 @@
     {
       "id": "tcl_metro_full",
       "textureResource": "mtr:mtr_france_sign/tcl/metro-full.png",
-      "isSmall": true
+      "small": true
     },
     {
       "id": "tcl_funi_full",
       "textureResource": "mtr:mtr_france_sign/tcl/funi-full.png",
-      "isSmall": true
+      "small": true
     },
     {
       "id": "tcl_tram_full",
       "textureResource": "mtr:mtr_france_sign/tcl/tram-full.png",
-      "isSmall": true
+      "small": true
     },
     {
       "id": "tcl_cbus_full",
       "textureResource": "mtr:mtr_france_sign/tcl/cbus-full.png",
-      "isSmall": true
+      "small": true
     },
     {
       "id": "tcl_bus_full",
       "textureResource": "mtr:mtr_france_sign/tcl/bus-full.png",
-      "isSmall": true
+      "small": true
     },
     {
       "id": "tcl_metro",
       "textureResource": "mtr:mtr_france_sign/tcl/metro.png",
-      "isSmall": true
+      "small": true
     },
     {
       "id": "tcl_funi",
       "textureResource": "mtr:mtr_france_sign/tcl/funi.png",
-      "isSmall": true
+      "small": true
     },
     {
       "id": "tcl_tram",
       "textureResource": "mtr:mtr_france_sign/tcl/tram.png",
-      "isSmall": true
+      "small": true
     },
     {
       "id": "tcl_cbus",
       "textureResource": "mtr:mtr_france_sign/tcl/cbus.png",
-      "isSmall": true
+      "small": true
     },
     {
       "id": "tcl_bus",
       "textureResource": "mtr:mtr_france_sign/tcl/bus.png",
-      "isSmall": true
+      "small": true
     },
     {
       "id": "tcl_metro_a_small",
       "textureResource": "mtr:mtr_france_sign/tcl/metro-a.png",
-      "isSmall": true
+      "small": true
     },
     {
       "id": "tcl_metro_a",
       "textureResource": "mtr:mtr_france_sign/tcl/metro-a.png",
-      "isSmall": true,
+      "small": true,
       "customText": "Perrache|Vaulx-en-Velin - La Soie"
     },
     {
       "id": "tcl_metro_a_reverse",
       "textureResource": "mtr:mtr_france_sign/tcl/metro-a.png",
-      "isSmall": true,
+      "small": true,
       "flipCustomText": true,
       "customText": "Perrache|Vaulx-en-Velin - La Soie"
     },
     {
       "id": "tcl_metro_b_small",
       "textureResource": "mtr:mtr_france_sign/tcl/metro-b.png",
-      "isSmall": true
+      "small": true
     },
     {
       "id": "tcl_metro_b",
       "textureResource": "mtr:mtr_france_sign/tcl/metro-b.png",
-      "isSmall": true,
+      "small": true,
       "customText": "Charpennes - Charles Hernu|Saint-Genis-Laval Hôpitaux Sud"
     },
     {
       "id": "tcl_metro_b_reverse",
       "textureResource": "mtr:mtr_france_sign/tcl/metro-b.png",
-      "isSmall": true,
+      "small": true,
       "flipCustomText": true,
       "customText": "Charpennes - Charles Hernu|Saint-Genis-Laval Hôpitaux Sud"
     },
     {
       "id": "tcl_metro_c_small",
       "textureResource": "mtr:mtr_france_sign/tcl/metro-c.png",
-      "isSmall": true
+      "small": true
     },
     {
       "id": "tcl_metro_c",
       "textureResource": "mtr:mtr_france_sign/tcl/metro-c.png",
-      "isSmall": true,
+      "small": true,
       "customText": "Hôtel de Ville - Louis Pradel|Cuire"
     },
     {
       "id": "tcl_metro_c_reverse",
       "textureResource": "mtr:mtr_france_sign/tcl/metro-c.png",
-      "isSmall": true,
+      "small": true,
       "flipCustomText": true,
       "customText": "Hôtel de Ville - Louis Pradel|Cuire"
     },
     {
       "id": "tcl_metro_d_small",
       "textureResource": "mtr:mtr_france_sign/tcl/metro-d.png",
-      "isSmall": true
+      "small": true
     },
     {
       "id": "tcl_metro_d",
       "textureResource": "mtr:mtr_france_sign/tcl/metro-d.png",
-      "isSmall": true,
+      "small": true,
       "customText": "Gare de Vaise|Gare de Vénissieux"
     },
     {
       "id": "tcl_metro_d_reverse",
       "textureResource": "mtr:mtr_france_sign/tcl/metro-d.png",
-      "isSmall": true,
+      "small": true,
       "flipCustomText": true,
       "customText": "Gare de Vaise|Gare de Vénissieux"
     },
     {
       "id": "tcl_funi_1_small",
       "textureResource": "mtr:mtr_france_sign/tcl/funi-1.png",
-      "isSmall": true
+      "small": true
     },
     {
       "id": "tcl_funi_1",
       "textureResource": "mtr:mtr_france_sign/tcl/funi-1.png",
-      "isSmall": true,
+      "small": true,
       "customText": "Vieux Lyon|Saint-Just"
     },
     {
       "id": "tcl_funi_1_reverse",
       "textureResource": "mtr:mtr_france_sign/tcl/funi-1.png",
-      "isSmall": true,
+      "small": true,
       "flipCustomText": true,
       "customText": "Vieux Lyon|Saint-Just"
     },
     {
       "id": "tcl_funi_2_small",
       "textureResource": "mtr:mtr_france_sign/tcl/funi-2.png",
-      "isSmall": true
+      "small": true
     },
     {
       "id": "tcl_funi_2",
       "textureResource": "mtr:mtr_france_sign/tcl/funi-2.png",
-      "isSmall": true,
+      "small": true,
       "customText": "Vieux Lyon|Fourvière"
     },
     {
       "id": "tcl_funi_2_reverse",
       "textureResource": "mtr:mtr_france_sign/tcl/funi-2.png",
-      "isSmall": true,
+      "small": true,
       "flipCustomText": true,
       "customText": "Vieux Lyon|Fourvière"
     },
     {
       "id": "tcl_tram_1_small",
       "textureResource": "mtr:mtr_france_sign/tcl/tram-1.png",
-      "isSmall": true
+      "small": true
     },
     {
       "id": "tcl_tram_1",
       "textureResource": "mtr:mtr_france_sign/tcl/tram-1.png",
-      "isSmall": true,
+      "small": true,
       "customText": "IUT - Feyssine|Debourg"
     },
     {
       "id": "tcl_tram_1_reverse",
       "textureResource": "mtr:mtr_france_sign/tcl/tram-1.png",
-      "isSmall": true,
+      "small": true,
       "flipCustomText": true,
       "customText": "IUT - Feyssine|Debourg"
     },
     {
       "id": "tcl_tram_2_small",
       "textureResource": "mtr:mtr_france_sign/tcl/tram-2.png",
-      "isSmall": true
+      "small": true
     },
     {
       "id": "tcl_tram_2",
       "textureResource": "mtr:mtr_france_sign/tcl/tram-2.png",
-      "isSmall": true,
+      "small": true,
       "customText": "Hôtel de Région - Montrochet|Saint-Priest Bel Air"
     },
     {
       "id": "tcl_tram_2_reverse",
       "textureResource": "mtr:mtr_france_sign/tcl/tram-2.png",
-      "isSmall": true,
+      "small": true,
       "flipCustomText": true,
       "customText": "Hôtel de Région - Montrochet|Saint-Priest Bel Air"
     },
     {
       "id": "tcl_tram_3_small",
       "textureResource": "mtr:mtr_france_sign/tcl/tram-3.png",
-      "isSmall": true
+      "small": true
     },
     {
       "id": "tcl_tram_3",
       "textureResource": "mtr:mtr_france_sign/tcl/tram-3.png",
-      "isSmall": true,
+      "small": true,
       "customText": "Gare Part-Dieu|Meyzieu Les Panettes"
     },
     {
       "id": "tcl_tram_3_reverse",
       "textureResource": "mtr:mtr_france_sign/tcl/tram-3.png",
-      "isSmall": true,
+      "small": true,
       "flipCustomText": true,
       "customText": "Gare Part-Dieu|Meyzieu Les Panettes"
     },
     {
       "id": "tcl_tram_4_small",
       "textureResource": "mtr:mtr_france_sign/tcl/tram-4.png",
-      "isSmall": true
+      "small": true
     },
     {
       "id": "tcl_tram_4",
       "textureResource": "mtr:mtr_france_sign/tcl/tram-4.png",
-      "isSmall": true,
+      "small": true,
       "customText": "La Doua - Gaston Berger|Hôpital Feyzin Vénissieux"
     },
     {
       "id": "tcl_tram_4_reverse",
       "textureResource": "mtr:mtr_france_sign/tcl/tram-4.png",
-      "isSmall": true,
+      "small": true,
       "flipCustomText": true,
       "customText": "La Doua - Gaston Berger|Hôpital Feyzin Vénissieux"
     },
     {
       "id": "tcl_tram_5_small",
       "textureResource": "mtr:mtr_france_sign/tcl/tram-5.png",
-      "isSmall": true
+      "small": true
     },
     {
       "id": "tcl_tram_5",
       "textureResource": "mtr:mtr_france_sign/tcl/tram-5.png",
-      "isSmall": true,
+      "small": true,
       "customText": "Grange Blanche|Eurexpo"
     },
     {
       "id": "tcl_tram_5_reverse",
       "textureResource": "mtr:mtr_france_sign/tcl/tram-5.png",
-      "isSmall": true,
+      "small": true,
       "flipCustomText": true,
       "customText": "Grange Blanche|Eurexpo"
     },
     {
       "id": "tcl_tram_6_small",
       "textureResource": "mtr:mtr_france_sign/tcl/tram-6.png",
-      "isSmall": true
+      "small": true
     },
     {
       "id": "tcl_tram_6",
       "textureResource": "mtr:mtr_france_sign/tcl/tram-6.png",
-      "isSmall": true,
+      "small": true,
       "customText": "La Doua - Gaston Berger|Debourg"
     },
     {
       "id": "tcl_tram_6_reverse",
       "textureResource": "mtr:mtr_france_sign/tcl/tram-6.png",
-      "isSmall": true,
+      "small": true,
       "flipCustomText": true,
       "customText": "La Doua - Gaston Berger|Debourg"
     },
     {
       "id": "tcl_tram_7_small",
       "textureResource": "mtr:mtr_france_sign/tcl/tram-7.png",
-      "isSmall": true
+      "small": true
     },
     {
       "id": "tcl_tram_7",
       "textureResource": "mtr:mtr_france_sign/tcl/tram-7.png",
-      "isSmall": true,
+      "small": true,
       "customText": "Vaulx-en-Velin - La Soie|Décines OL Vallée"
     },
     {
       "id": "tcl_tram_7_reverse",
       "textureResource": "mtr:mtr_france_sign/tcl/tram-7.png",
-      "isSmall": true,
+      "small": true,
       "flipCustomText": true,
       "customText": "Vaulx-en-Velin - La Soie|Décines OL Vallée"
     },
     {
       "id": "tcl_rx_small",
       "textureResource": "mtr:mtr_france_sign/tcl/rhonexpress.png",
-      "isSmall": true
+      "small": true
     },
     {
       "id": "tcl_rx",
       "textureResource": "mtr:mtr_france_sign/tcl/rhonexpress.png",
-      "isSmall": true,
+      "small": true,
       "customText": "Gare Part-Dieu|Aéroport"
     },
     {
       "id": "tcl_rx_reverse",
       "textureResource": "mtr:mtr_france_sign/tcl/rhonexpress.png",
-      "isSmall": true,
+      "small": true,
       "flipCustomText": true,
       "customText": "Gare Part-Dieu|Aéroport"
     }

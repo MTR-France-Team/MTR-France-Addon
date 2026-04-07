@@ -74,10 +74,9 @@ public class InvisiblePlatform extends BlockPlatform implements BlockWithEntity 
             final ClientPlayerEntity clientPlayerEntity = minecraftClient.getPlayerMapped();
 
             if(clientPlayerEntity == null) return;
-
-            final StoredMatrixTransformations storedMatrixTransformations = new StoredMatrixTransformations(0.5 + blockEntity.getPos2().getX(), 0.5 + blockEntity.getPos2().getY(), 0.5 + blockEntity.getPos2().getZ());
-
             if((RenderRails.isHoldingRailRelated(clientPlayerEntity) || clientPlayerEntity.isHolding(ModBlocks.INVISIBLE_PLATFORM.get().asItem())) && minecraftClient.getCurrentScreenMapped() == null) {
+                final StoredMatrixTransformations storedMatrixTransformations = new StoredMatrixTransformations(0.5 + blockEntity.getPos2().getX(), 0.5 + blockEntity.getPos2().getY(), 0.5 + blockEntity.getPos2().getZ());
+
                 MainRenderer.scheduleRender(new Identifier("mtrfranceaddon", "textures/item/invisible_platform.png"), false, QueuedRenderLayer.LIGHT_TRANSLUCENT, (graphicsHolderNew, offset) -> {
                     storedMatrixTransformations.transform(graphicsHolderNew, offset);
                     InitClient.transformToFacePlayer(graphicsHolderNew, blockEntity.getPos2().getX() + 0.5, blockEntity.getPos2().getY() + 0.5, blockEntity.getPos2().getZ() + 0.5);
@@ -88,10 +87,6 @@ public class InvisiblePlatform extends BlockPlatform implements BlockWithEntity 
             }
         }
 
-        @Override
-        public boolean isInRenderDistance(InvPlatBE blockEntity, Vector3d position) {
-            return true;
-        }
     }
 
 }
