@@ -103,5 +103,5 @@
   "block.mtrfranceaddon.twohundredgallows": "Panneau signalement potence 200 km/h",
   "block.mtrfranceaddon.threehundredgallows": "Panneau signalement potence 300 km/h",
   "block.mtrfranceaddon.squaregallows": "Panneau signalement potence carré",
-  "itemgroup.mtrfranceaddon.sign_group": "Panneau MTR"
+  "itemGroup.mtrfranceaddon.sign_group": "Panneau MTR"
 }
