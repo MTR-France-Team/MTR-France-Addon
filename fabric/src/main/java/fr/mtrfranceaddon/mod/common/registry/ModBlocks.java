@@ -517,6 +517,13 @@ public final class ModBlocks {
             ModItemGroups.MTRFranceAddonGroup
     );
 
+    // Tactile Map
+    public static final BlockRegistryObject TACTILE_MAP_BLOCK = MTRFranceAddonRegistry.registerBlockWithItem(
+            "tactile_map",
+            () -> new Block(new TactileMapBlock(createDefaultBlockSettings(false))),
+            ModItemGroups.MTRFranceAddonGroup
+    );
+
     public static void register() {
         Init.LOGGER.info("Registering Blocks");
 

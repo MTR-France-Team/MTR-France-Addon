@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTR Connect — Carte Tactile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+    <header class="header">
+        <div class="header-container">
+            <a class="logo" href="#">
+                <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true">
+                    <path fill="#8DE8FE" d="M12 2C7.58 2 4 2.5 4 7v9.5A3.5 3.5 0 0 0 7.5 20l-1.3 1.3c-.2.2 0 .7.4.7h11c.4 0 .6-.5.4-.7L16.5 20A3.5 3.5 0 0 0 20 16.5V7c0-4.5-3.58-5-8-5ZM7.5 17A1.5 1.5 0 1 1 9 15.5 1.5 1.5 0 0 1 7.5 17Zm9 0a1.5 1.5 0 1 1 1.5-1.5 1.5 1.5 0 0 1-1.5 1.5ZM18 11H6V7h12Z"></path>
+                </svg>
+                <span class="logo-text">MTR<span class="logo-accent">Connect</span></span>
+            </a>
+
+            <div class="api-port-config">
+                <label for="mtrPortInput">Port MTR:</label>
+                <input type="number" id="mtrPortInput" value="8888" min="1" max="65535">
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="search-section">
+            <div class="container">
+                <h1 id="stationTitle" class="title">Chargement de la station...</h1>
+                <p id="stationSubtitle" class="subtitle">Horaires des départs en temps réel</p>
+            </div>
+        </section>
+
+        <section class="results-section container">
+            <h2>Prochains départs</h2>
+            <div id="resultsContainer" class="results-container">
+                <div id="loadingState" class="loading-state">Connexion à MTR Core...</div>
+                <ul id="resultsList" class="results-list"></ul>
+            </div>
+        </section>
+    </main>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

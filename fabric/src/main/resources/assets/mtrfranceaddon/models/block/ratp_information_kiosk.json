@@ -1,0 +1,73 @@
+{
+  "credit": "Converted from Blockbench for MTR France Addon",
+  "texture_size": [128, 128],
+  "textures": {
+    "0": "mtrfranceaddon:block/ratp_information_kiosk",
+    "particle": "mtrfranceaddon:block/ratp_information_kiosk"
+  },
+  "elements": [
+    {
+      "name": "beveled_cuboid",
+      "from": [4.125, -2, 3.1875],
+      "to": [5.875, 13, 12.8125],
+      "rotation": {"angle": -20.0, "axis": "x", "origin": [5.0, 22.0, 18.0]},
+      "faces": {
+        "north": {"uv": [8.375, 0.087, 8.8125, 3.825], "texture": "#0"},
+        "east": {"uv": [8.484, 0.109, 10.891, 3.65], "texture": "#0"},
+        "south": {"uv": [8.375, 0.087, 8.8125, 3.825], "texture": "#0"},
+        "west": {"uv": [4.484, 8.359, 6.891, 11.901], "texture": "#0"},
+        "up": {"uv": [0.031, 11.45, 0.469, 13.857], "texture": "#0"},
+        "down": {"uv": [0.781, 11.45, 1.219, 13.857], "texture": "#0"}
+      }
+    },
+    {
+      "name": "plane_base",
+      "from": [7.2, 0, 4.9],
+      "to": [8.95, 29.2, 19.9564],
+      "faces": {
+        "north": {"uv": [10.0, 6.861, 10.438, 14.161], "texture": "#0"},
+        "east": {"uv": [10.0, 6.861, 13.764, 14.161], "texture": "#0"},
+        "south": {"uv": [10.0, 6.861, 10.438, 14.161], "texture": "#0"},
+        "west": {"uv": [10.0, 6.861, 13.764, 14.161], "texture": "#0"},
+        "up": {"uv": [10.0, 6.861, 10.438, 10.625], "texture": "#0"},
+        "down": {"uv": [10.0, 6.861, 10.438, 10.625], "texture": "#0"}
+      }
+    },
+    {
+      "name": "screen_front",
+      "from": [7.2, 8.75, 4.9],
+      "to": [11.7, 29.2, 19.9],
+      "faces": {
+        "north": {"uv": [4.25, 0.0, 5.375, 5.125], "texture": "#0"},
+        "east": {"uv": [4.25, 0.0, 8.0, 5.125], "texture": "#0"},
+        "south": {"uv": [4.25, 0.0, 5.375, 5.125], "texture": "#0"},
+        "west": {"uv": [4.25, 0.0, 8.0, 5.125], "texture": "#0"},
+        "up": {"uv": [4.25, 0.0, 5.375, 3.75], "texture": "#0"},
+        "down": {"uv": [4.25, 0.0, 5.375, 3.75], "texture": "#0"}
+      }
+    }
+  ],
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [75, 45, 0],
+      "translation": [0, 2.5, 0],
+      "scale": [0.375, 0.375, 0.375]
+    },
+    "firstperson_righthand": {
+      "rotation": [0, 45, 0],
+      "scale": [0.4, 0.4, 0.4]
+    },
+    "ground": {
+      "translation": [0, 3, 0],
+      "scale": [0.25, 0.25, 0.25]
+    },
+    "gui": {
+      "rotation": [30, 225, 0],
+      "translation": [0, -1, 0],
+      "scale": [0.55, 0.55, 0.55]
+    },
+    "fixed": {
+      "scale": [0.5, 0.5, 0.5]
+    }
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "mtrfranceaddon:block/ratp_information_kiosk" }
+  }
+}
