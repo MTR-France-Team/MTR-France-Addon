@@ -517,10 +517,10 @@ public final class ModBlocks {
             ModItemGroups.MTRFranceAddonGroup
     );
 
-    // Tactile Map
-    public static final BlockRegistryObject TACTILE_MAP_BLOCK = MTRFranceAddonRegistry.registerBlockWithItem(
-            "tactile_map",
-            () -> new Block(new TactileMapBlock(createDefaultBlockSettings(false))),
+    // RATP Information Kiosk
+    public static final BlockRegistryObject RATP_INFORMATION_KIOSK = MTRFranceAddonRegistry.registerBlockWithItem(
+            "ratp_information_kiosk",
+            () -> new Block(new RatpInformationKioskBlock(createDefaultBlockSettings(false))),
             ModItemGroups.MTRFranceAddonGroup
     );
 

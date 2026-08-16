@@ -10,7 +10,7 @@
       "name": "beveled_cuboid",
       "from": [4.125, -2, 3.1875],
       "to": [5.875, 13, 12.8125],
-      "rotation": {"angle": -20.0, "axis": "x", "origin": [5.0, 22.0, 18.0]},
+      "rotation": {"angle": -22.5, "axis": "x", "origin": [5.0, 22.0, 18.0]},
       "faces": {
         "north": {"uv": [8.375, 0.087, 8.8125, 3.825], "texture": "#0"},
         "east": {"uv": [8.484, 0.109, 10.891, 3.65], "texture": "#0"},
