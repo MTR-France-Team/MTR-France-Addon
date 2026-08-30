@@ -1,6 +1,0 @@
-{
-  "parent": "mtrfranceaddon:block/switchthhsignblock",
-  "textures": {
-    "layer0": "mtrfranceaddon:item/switchthhsignblock"
-  }
-}

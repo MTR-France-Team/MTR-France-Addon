@@ -1,0 +1,9 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "mtrfranceaddon:block/ratp_ticket_barrier_upper"
+      }
+    }
+  ]
+}

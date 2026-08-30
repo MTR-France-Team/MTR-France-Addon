@@ -1,0 +1,6 @@
+{
+  "parent": "mtrfranceaddon:block/signs/direction/sign_s_curve_left_ground",
+  "textures": {
+    "layer0": "mtrfranceaddon:item/signs/direction/sign_s_curve_left_ground"
+  }
+}

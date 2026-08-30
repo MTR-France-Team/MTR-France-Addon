@@ -1,0 +1,6 @@
+{
+  "parent": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_double_base",
+  "textures": {
+    "0": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_double_logo"
+  }
+}

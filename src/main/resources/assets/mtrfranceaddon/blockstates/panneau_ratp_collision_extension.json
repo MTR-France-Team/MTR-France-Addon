@@ -1,0 +1,9 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "mtrfranceaddon:block/panneau_ratp_collision_extension"
+      }
+    }
+  ]
+}

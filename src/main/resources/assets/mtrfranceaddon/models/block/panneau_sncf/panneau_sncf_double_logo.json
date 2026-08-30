@@ -1,0 +1,77 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Made with Blockbench",
+	"parent": "mtrfranceaddon:block/panneau_sncf/panneau_sncf_double_base",
+	"texture_size": [10, 20],
+	"textures": {
+		"0": "mtrfranceaddon:block/panneau_sncf/panneau_sncf",
+		"1": "mtrfranceaddon:block/panneau_sncf/logo_sncf",
+		"particle": "mtrfranceaddon:block/panneau_sncf/logo_sncf"
+	},
+	"elements": [
+		{
+			"from": [-16, 0, 7.5],
+			"to": [-15, 9, 8.5],
+			"faces": {
+				"north": {"uv": [0, 8, 16, 16], "texture": "#0"},
+				"east": {"uv": [0, 8, 16, 16], "texture": "#0"},
+				"south": {"uv": [0, 8, 16, 16], "texture": "#0"},
+				"west": {"uv": [0, 8, 16, 16], "texture": "#0"},
+				"up": {"uv": [0, 8, 16, 16], "texture": "#0"},
+				"down": {"uv": [0, 8, 16, 16], "texture": "#0"}
+			}
+		},
+		{
+			"from": [31, 0, 7.5],
+			"to": [32, 9, 8.5],
+			"faces": {
+				"north": {"uv": [0, 8, 16, 16], "texture": "#0"},
+				"east": {"uv": [0, 8, 16, 16], "texture": "#0"},
+				"south": {"uv": [0, 8, 16, 16], "texture": "#0"},
+				"west": {"uv": [0, 8, 16, 16], "texture": "#0"},
+				"up": {"uv": [0, 8, 16, 16], "texture": "#0"},
+				"down": {"uv": [0, 8, 16, 16], "texture": "#0"}
+			}
+		},
+		{
+			"from": [-15, 1, 8],
+			"to": [31, 9, 8],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 8], "texture": "#0"},
+				"east": {"uv": [0, 0, 16, 8], "texture": "#0"},
+				"south": {"uv": [0, 0, 16, 8], "texture": "#0"},
+				"west": {"uv": [0, 0, 16, 8], "texture": "#0"},
+				"up": {"uv": [0, 0, 16, 8], "texture": "#0"},
+				"down": {"uv": [0, 0, 16, 8], "texture": "#0"}
+			}
+		},
+		{
+			"name": "logo",
+			"from": [-13.5, 3.25, 7.99],
+			"to": [-6.5, 6.75, 7.99],
+			"rotation": {"angle": 0, "axis": "y", "origin": [1.5, 0.25, -0.25]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#1"}
+			}
+		},
+		{
+			"name": "logo_bis",
+			"from": [22.5, 3.25, 8.01],
+			"to": [29.5, 6.75, 8.01],
+			"rotation": {"angle": 0, "axis": "y", "origin": [37.5, 0.25, 0.25]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#1"}
+			}
+		}
+	]
+}

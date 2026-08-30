@@ -1,0 +1,6 @@
+{
+  "parent": "mtrfranceaddon:block/signs/pole_connection/pole_connection_right",
+  "textures": {
+    "layer0": "mtrfranceaddon:item/signs/pole_connection/pole_connection_left"
+  }
+}

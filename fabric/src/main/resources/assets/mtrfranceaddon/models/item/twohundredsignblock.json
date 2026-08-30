@@ -1,6 +1,0 @@
-{
-  "parent": "mtrfranceaddon:block/twohundredsignblock",
-  "textures": {
-    "layer0": "mtrfranceaddon:item/twohundredsignblock"
-  }
-}

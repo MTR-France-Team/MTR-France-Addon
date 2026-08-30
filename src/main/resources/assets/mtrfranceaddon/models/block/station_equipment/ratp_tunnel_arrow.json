@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_glazed_terracotta",
+  "textures": {
+    "pattern": "mtrfranceaddon:block/station_equipment/ratp_tunnel_arrow"
+  }
+}

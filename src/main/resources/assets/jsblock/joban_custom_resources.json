@@ -1,0 +1,169 @@
+{
+  "pids_images": [
+    {
+      "id": "IDF_SIEL_ARRIVALS",
+      "name": "[IDF] SIEL Arrivées",
+      "thumbnail": "jsblock:idf/images/backgrounds/siel.png",
+      "scriptFiles": [
+        "jsblock:idf/scripts/siel.js"
+      ]
+    },
+    {
+      "id": "IDF_SIEL_DEPARTURES",
+      "name": "[IDF] SIEL Départs",
+      "thumbnail": "jsblock:idf/images/backgrounds/siel.png",
+      "scriptFiles": [
+        "jsblock:idf/scripts/siel_depart.js"
+      ]
+    },
+    {
+      "id": "IDF_INFOGARE",
+      "name": "[IDF] Infogare",
+      "thumbnail": "jsblock:idf/images/backgrounds/infogare.png",
+      "scriptFiles": [
+        "jsblock:idf/scripts/infogare.js"
+      ]
+    },
+    {
+      "id": "IDF_IENA1",
+      "name": "[IDF] IENA Temps Restant",
+      "thumbnail": "jsblock:idf/images/backgrounds/iena1.png",
+      "scriptFiles": [
+        "jsblock:idf/scripts/iena1.js"
+      ]
+    },
+    {
+      "id": "IDF_IENA2",
+      "name": "[IDF] IENA Horaires",
+      "thumbnail": "jsblock:idf/images/backgrounds/iena2.png",
+      "scriptFiles": [
+        "jsblock:idf/scripts/iena2.js"
+      ]
+    },
+    {
+      "id": "IDF_IENA3_ARRIVALS",
+      "name": "[IDF] IENA Desserte (temps arrivée)",
+      "thumbnail": "jsblock:idf/images/backgrounds/iena3.png",
+      "scriptFiles": [
+        "jsblock:idf/scripts/iena3.js"
+      ]
+    },
+    {
+      "id": "IDF_IENA3_DEPARTURES",
+      "name": "[IDF] IENA Desserte (temps départ)",
+      "thumbnail": "jsblock:idf/images/backgrounds/iena3.png",
+      "scriptFiles": [
+        "jsblock:idf/scripts/iena3_depart.js"
+      ]
+    },
+    {
+      "id": "SNCF_PLATFORM_DISPLAY",
+      "name": "[SNCF] CATI Platform Display",
+      "thumbnail": "thumbnails:sncf_cati_platform.png",
+      "scriptFiles": [
+        "sncf:views/cati/platform.js"
+      ],
+      "blacklist": [
+        "pids_1a",
+        "lcd_pids"
+      ]
+    },
+    {
+      "id": "SNCF_STATION_DEPARTURES",
+      "name": "[SNCF] CATI Departure Board",
+      "thumbnail": "thumbnails:sncf_cati_departures.png",
+      "scriptFiles": [
+        "sncf:views/cati/departures.js"
+      ],
+      "blacklist": [
+        "lcd_pids"
+      ]
+    },
+    {
+      "id": "SNCF_LED3_PLATFORM_DISPLAY",
+      "name": "[SNCF] LED Platform Display (3 lines)",
+      "thumbnail": "thumbnails:sncf_led3.png",
+      "scriptFiles": [
+        "sncf:views/cati/led3.js"
+      ],
+      "blacklist": [
+        "rv_pids",
+        "pids_projector",
+        "lcd_pids"
+      ]
+    },
+    {
+      "id": "SNCF_LED4_PLATFORM_DISPLAY",
+      "name": "[SNCF] LED Platform Display (4 lines)",
+      "thumbnail": "thumbnails:sncf_led4.png",
+      "scriptFiles": [
+        "sncf:views/cati/led4.js"
+      ],
+      "blacklist": [
+        "pids_1a",
+        "lcd_pids"
+      ]
+    },
+    {
+      "id": "SNCF_INFORMATION_DISPLAY",
+      "name": "[SNCF] Information Display",
+      "thumbnail": "thumbnails:sncf_cati_information.png",
+      "scriptFiles": [
+        "sncf:views/info.js"
+      ],
+      "blacklist": [
+        "lcd_pids",
+        "pids_1a"
+      ]
+    },
+    {
+      "id": "SNCF_STATION_ARRIVALS",
+      "name": "[SNCF] Arrivées en Gare (Deprecated)",
+      "thumbnail": "thumbnails:warning.png",
+      "scriptFiles": [
+        "aca:scripts/update_station_arrivals.js"
+      ],
+      "blacklist": [
+        "lcd_pids",
+        "pids_1a"
+      ]
+    },
+    {
+      "id": "acapid_sncf_platform_1a_display",
+      "name": "[SNCF] CATI Platform Display (1A)",
+      "thumbnail": "thumbnails:sncf_cati_platform_1a.png",
+      "scriptFiles": [
+        "sncf:views/cati/platform_1a.js"
+      ],
+      "blacklist": [
+        "rv_pids",
+        "pids_projector",
+        "lcd_pids"
+      ]
+    },
+    {
+      "id": "acapid_sncf_live_platform_display",
+      "name": "[SNCF] LIVE Platform Display",
+      "thumbnail": "thumbnails:sncf_live_platform.png",
+      "scriptFiles": [
+        "sncf:views/live/platform.js"
+      ],
+      "blacklist": [
+        "pids_1a",
+        "lcd_pids"
+      ]
+    },
+    {
+      "id": "acapid_sncf_live_departure_board",
+      "name": "[SNCF] LIVE Departure Board",
+      "thumbnail": "thumbnails:sncf_live_departures.png",
+      "scriptFiles": [
+        "sncf:views/live/departures.js"
+      ],
+      "blacklist": [
+        "lcd_pids",
+        "pids_1a"
+      ]
+    }
+  ]
+}

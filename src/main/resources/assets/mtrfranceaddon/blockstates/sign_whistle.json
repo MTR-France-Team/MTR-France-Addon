@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "mtrfranceaddon:block/signs/misc/sign_whistle"
+    },
+    "facing=south": {
+      "model": "mtrfranceaddon:block/signs/misc/sign_whistle",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "mtrfranceaddon:block/signs/misc/sign_whistle",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "mtrfranceaddon:block/signs/misc/sign_whistle",
+      "y": 90
+    }
+  }
+}

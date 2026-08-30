@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "layers=1": { "model": "mtrfranceaddon:block/building_materials/copycat_layer" },
+    "layers=2": { "model": "mtrfranceaddon:block/building_materials/copycat_layer" },
+    "layers=3": { "model": "mtrfranceaddon:block/building_materials/copycat_layer" },
+    "layers=4": { "model": "mtrfranceaddon:block/building_materials/copycat_layer" },
+    "layers=5": { "model": "mtrfranceaddon:block/building_materials/copycat_layer" },
+    "layers=6": { "model": "mtrfranceaddon:block/building_materials/copycat_layer" },
+    "layers=7": { "model": "mtrfranceaddon:block/building_materials/copycat_layer" },
+    "layers=8": { "model": "mtrfranceaddon:block/building_materials/copycat_layer" }
+  }
+}

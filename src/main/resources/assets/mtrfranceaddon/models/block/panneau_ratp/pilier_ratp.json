@@ -1,0 +1,170 @@
+{
+  "format_version": "1.9.0",
+  "credit": "Made with Blockbench",
+  "textures": {
+    "0": "mtrfranceaddon:block/panneau_ratp/pilier_ratp",
+    "particle": "#0"
+  },
+  "elements": [
+    {
+      "from": [
+        6.5,
+        0,
+        12.5
+      ],
+      "to": [
+        9.5,
+        16,
+        13.5
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          -3,
+          11
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            3,
+            16
+          ],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [
+            6,
+            0,
+            7,
+            16
+          ],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [
+            3,
+            0,
+            6,
+            16
+          ],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [
+            7,
+            0,
+            8,
+            16
+          ],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [
+            11,
+            1,
+            8,
+            0
+          ],
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [
+            11,
+            1,
+            8,
+            2
+          ],
+          "texture": "#0"
+        }
+      }
+    }
+  ],
+  "display": {
+    "thirdperson_righthand": {
+      "translation": [
+        0,
+        1,
+        0
+      ],
+      "scale": [
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    "thirdperson_lefthand": {
+      "translation": [
+        0,
+        1,
+        0
+      ],
+      "scale": [
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    "firstperson_righthand": {
+      "translation": [
+        0,
+        1,
+        0
+      ],
+      "scale": [
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    "firstperson_lefthand": {
+      "translation": [
+        0,
+        1,
+        0
+      ],
+      "scale": [
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    "ground": {
+      "scale": [
+        0.2,
+        0.2,
+        0.19
+      ]
+    },
+    "gui": {
+      "scale": [
+        0.3,
+        0.3,
+        0.3
+      ]
+    },
+    "fixed": {
+      "scale": [
+        0.3,
+        0.3,
+        0.3
+      ]
+    },
+    "on_shelf": {
+      "scale": [
+        0.3,
+        0.3,
+        0.3
+      ]
+    }
+  },
+  "texture_size": [
+    16,
+    16
+  ],
+  "ambientocclusion": false
+}

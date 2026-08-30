@@ -1,0 +1,39 @@
+modLoader = "javafml"
+loaderVersion = "${forge_loader_range}"
+license = "MIT"
+issueTrackerURL = "${mod_issues}"
+
+[[mods]]
+modId = "${mod_id}"
+version = "${version}"
+displayName = "${mod_name}"
+authors = "${mod_author}"
+logoFile = "assets/${mod_id}/icon.png"
+description = '''${mod_description}'''
+
+[[dependencies.${mod_id}]]
+modId = "forge"
+mandatory = true
+versionRange = "${forge_loader_range}"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.${mod_id}]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[${minecraft_version}]"
+ordering = "NONE"
+side = "BOTH"
+
+# MTR 4.1 is still in beta: Maven ordering places "4.1.0-beta.2" BEFORE
+# "4.1.0", so a [4.1.0,) bound would exclude the betas. Stay wide open
+# until 4.1 stabilizes, then tighten this.
+[[dependencies.${mod_id}]]
+modId = "mtr"
+mandatory = true
+versionRange = "[0,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[mixins]]
+config = "${mod_id}.mixins.json"

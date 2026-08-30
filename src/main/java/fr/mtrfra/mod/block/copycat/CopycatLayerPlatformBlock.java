@@ -1,0 +1,68 @@
+package fr.mtrfra.mod.block.copycat;
+
+import org.mtr.mapping.holder.BlockPos;
+import org.mtr.mapping.holder.BlockSettings;
+import org.mtr.mapping.holder.BlockState;
+import org.mtr.mapping.holder.BlockView;
+import org.mtr.mapping.holder.Direction;
+import org.mtr.mapping.holder.IntegerProperty;
+import org.mtr.mapping.holder.ItemPlacementContext;
+import org.mtr.mapping.holder.Property;
+import org.mtr.mapping.holder.WorldAccess;
+import org.mtr.mapping.tool.HolderBase;
+import org.mtr.mod.block.PlatformHelper;
+
+import java.util.List;
+
+public class CopycatLayerPlatformBlock extends CopycatBlockBase implements PlatformHelper {
+
+    public static final IntegerProperty LAYERS = IntegerProperty.of("layers", 1, 8);
+    private static final Property<Integer> LAYERS_PROPERTY = Property.cast(LAYERS);
+    private static final int MAX_LAYERS = 8;
+
+    public CopycatLayerPlatformBlock(BlockSettings blockSettings) {
+        super(blockSettings);
+    }
+
+    @Override
+    public void addBlockProperties(List<HolderBase<?>> properties) {
+        properties.add(LAYERS);
+        properties.add(FACING);
+        properties.add(DOOR_TYPE);
+        properties.add(SIDE);
+    }
+
+    @Override
+    public BlockState getPlacementState2(ItemPlacementContext context) {
+        final BlockPos pos = context.getBlockPos();
+        final BlockState existing = context.getWorld().getBlockState(pos);
+        if (existing.isOf(asBlock2())) {
+            final int layers = existing.get(LAYERS_PROPERTY);
+            return existing.with(LAYERS_PROPERTY, Math.min(MAX_LAYERS, layers + 1));
+        }
+        return getDefaultState2().with(new Property<>(FACING.data), context.getPlayerFacing().data);
+    }
+
+    @Override
+    public boolean canReplace2(BlockState state, ItemPlacementContext context) {
+        return state.isOf(asBlock2()) && state.get(LAYERS_PROPERTY) < MAX_LAYERS && context.getStack().getItem().equals(asItem2());
+    }
+
+    @Override
+    public BlockState getStateForNeighborUpdate2(BlockState state, Direction direction, BlockState neighborState, WorldAccess world, BlockPos pos, BlockPos neighborPos) {
+        final BlockState actualState = PlatformHelper.getActualState(BlockView.cast(world), pos, state);
+        if (!world.isClient() && !actualState.equals(state)) {
+            final org.mtr.mapping.holder.BlockEntity entity = world.getBlockEntity(pos);
+            if (entity != null && entity.data instanceof CopycatBlockBase.BlockEntity) {
+                ((CopycatBlockBase.BlockEntity) entity.data).redraw();
+            }
+        }
+        return actualState;
+    }
+
+    @Override
+    protected int heightUnits(BlockState state) {
+        return state.get(LAYERS_PROPERTY) * 2;
+    }
+
+}

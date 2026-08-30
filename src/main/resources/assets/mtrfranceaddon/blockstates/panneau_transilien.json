@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north,category=0": {
+      "model": "mtrfranceaddon:block/panneau_transilien/panneau_transilien"
+    },
+    "facing=east,category=0": {
+      "model": "mtrfranceaddon:block/panneau_transilien/panneau_transilien",
+      "y": 90
+    },
+    "facing=south,category=0": {
+      "model": "mtrfranceaddon:block/panneau_transilien/panneau_transilien",
+      "y": 180
+    },
+    "facing=west,category=0": {
+      "model": "mtrfranceaddon:block/panneau_transilien/panneau_transilien",
+      "y": 270
+    }
+  }
+}

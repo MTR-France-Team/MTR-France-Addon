@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "top": "mtrfranceaddon:block/station_equipment/platform_ratp",
+    "side": "minecraft:block/smooth_stone_slab_side",
+    "bottom": "minecraft:block/smooth_stone"
+  }
+}
+

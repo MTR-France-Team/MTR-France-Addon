@@ -1,0 +1,6 @@
+{
+  "parent": "mtrfranceaddon:block/signs/speed/sign_speed_120",
+  "textures": {
+    "layer0": "mtrfranceaddon:item/signs/speed/sign_speed_120"
+  }
+}

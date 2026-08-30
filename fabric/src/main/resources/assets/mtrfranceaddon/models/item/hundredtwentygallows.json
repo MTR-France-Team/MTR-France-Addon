@@ -1,6 +1,0 @@
-{
-  "parent": "mtrfranceaddon:block/hundredtwentygallows",
-  "textures": {
-    "layer0": "mtrfranceaddon:item/hundredtwentygallows"
-  }
-}

@@ -1,0 +1,17 @@
+{
+  "parent": "mtrfranceaddon:block/panneau_transilien/pilier_transilien",
+  "display": {
+    "gui": {
+      "scale": [
+        0.8,
+        0.8,
+        0.8
+      ],
+      "rotation": [
+        30,
+        225,
+        0
+      ]
+    }
+  }
+}

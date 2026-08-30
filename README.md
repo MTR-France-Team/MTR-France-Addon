@@ -1,13 +1,8 @@
-# MTR France Addon
+# MTR France Addon v2
 
-[![Minecraft](https://img.shields.io/badge/Minecraft-1.16.5--1.20.4-green.svg)](https://minecraft.net/)
+[![Minecraft](https://img.shields.io/badge/Minecraft-1.18.2--1.20.4-green.svg)](https://minecraft.net/)
 [![MTR](https://img.shields.io/badge/MTR-4.0.0+-blue.svg)](https://minecrafttransitrailway.com/)
-![Fabric](https://img.shields.io/badge/Fabric-Supported-blue.svg)
-![Forge](https://img.shields.io/badge/Forge-Supported-orange.svg)
-![License](https://img.shields.io/badge/License-MIT-lightgrey.svg)
-
-[![crowdin](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact/translate/crowdin_46h.png)](https://crowdin.com/project/mtr-france-addon)
-[![Crowdin](https://badges.crowdin.net/mtr-france-addon/localized.svg)](https://crowdin.com/project/mtr-france-addon)
+[![License](https://img.shields.io/badge/License-MIT-lightgrey.svg)](LICENSE.txt)
 
 [![github](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/available/github_64h.png)](https://github.com/MTR-France-Team/MTR-France-Addon)
 [![modrinth](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/available/modrinth_64h.png)](https://modrinth.com/project/YJct9p8I)
@@ -15,201 +10,79 @@
 ![fabric](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact/supported/fabric_46h.png)
 ![forge](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact/supported/forge_46h.png)
 
-Un addon pour le mod [Minecraft Transit Railway (MTR)](https://github.com/Minecraft-Transit-Railway/Minecraft-Transit-Railway/tree/master) qui vise à ajouter des éléments, signalétiques et décorations du réseau ferroviaire français.
+French railway content for MTR.
 
----
+By Team MTR-FRA. (Internal package/project name is `mtrfra` / "MTRFRA" — the mod id itself stays `mtrfranceaddon` for save/resourcepack continuity with the original release.)
 
-## 📋 Prérequis
+## Supported versions
 
-- **Java Development Kit (JDK)** :
-    - JDK 8 pour Minecraft 1.16.5
-    - JDK 16 pour Minecraft 1.17.1
-    - JDK 17 pour Minecraft 1.18.2 - 1.20.4
-    - JDK 21 pour Minecraft 1.20.5+
-- **Gradle** : Inclus via le wrapper (`gradlew`)
-- **Git** : Pour cloner le repository
+| Minecraft | Fabric | Forge | MTR API |
+|-----------|:------:|:-----:|---------|
+| 1.16.5 (dropped) | ❌ | ❌ | 4.0.x (`org.mtr.mapping`) |
+| 1.17.1 (dropped) | ❌ | ❌ | 4.0.x (`org.mtr.mapping`) |
+| 1.18.2 (STS) | ✅ (here) | ✅ (`legacy-forge/`) | 4.0.x (`org.mtr.mapping`) |
+| 1.19.2 (STS) | ✅ (here) | ✅ (`legacy-forge/`) | 4.0.x (`org.mtr.mapping`) |
+| 1.19.4 (STS) | ✅ (here) | ✅ (`legacy-forge/`) | 4.0.x (`org.mtr.mapping`) |
+| 1.20.1    | ✅ (here) | ✅ (`legacy-forge/`) | 4.0.x (`org.mtr.mapping`) |
+| 1.20.4    | ✅ (here) | ✅ (`legacy-forge/`) | 4.0.x (`org.mtr.mapping`) |
+| 1.21.x (upcoming) | 🔜 | 🔜 (NeoForge, not Forge) | 4.1.x (pending stable) |
 
----
+1.16.5 and 1.17.1 were supported by the original pre-rewrite addon but are not carried into this tree (too low demand to justify the mapping/API work this far back). 1.18.x and 1.19.x are short-term support (a handful of players remain on them) and will be dropped once they migrate. Forge support for 1.18.x-1.20.x lives in the nested [`legacy-forge/`](legacy-forge/) project, on its own Gradle 8 wrapper — see [Repository layout](#repository-layout) for why it can't share this build. 1.21.x support (Fabric + NeoForge) is planned but currently shelved pending a stable MTR 4.1 release.
 
-## 🔧 Compilation du Projet
+### Java / JDK requirements
 
-Ce projet supporte **deux méthodes de compilation** pour générer les JARs Fabric et Forge :
+Mojang itself raises the minimum Java version per Minecraft release, independently of anything this project decides:
 
-### Méthode 1 : Compilation Manuelle (Version Spécifique)
+| Minecraft | Mojang's minimum JDK | This project |
+|-----------|:---------------------:|---------------|
+| 1.16.5 / 1.17.1 | 8 / 16 | — (dropped, see above) |
+| 1.18.2 – 1.20.4 | 17 | **17** (Fabric toolchains) |
+| 1.21.x (upcoming) | 21 | 21 (planned) |
 
-Cette méthode permet de compiler le mod pour une version spécifique de Minecraft.
+We target JDK 17 rather than something lower for one simple reason: **1.18.2 is our oldest supported version, and 1.18.2 already requires Java 17 per Mojang.** There's no version left in this tree that Java 8 or 16 would actually help — those only mattered for 1.16.5/1.17.1, which are dropped. So 17 isn't a compromise, it's just the real floor of what we ship.
 
-#### Étapes :
+The one extra wrinkle: Stonecutter itself (the tool that manages the multi-version `src/` tree, not the compiled mod) needs **JDK 21+ on `JAVA_HOME`** to run, regardless of which Minecraft version you're actively building — see [Building](#building) below. That's a build-tool requirement, separate from the per-version Java 17 toolchain the compiled code actually targets.
 
-1. **Cloner le repository**
-   ```bash
-   git clone https://github.com/[votre-username]/MTRFranceAddon.git
-   cd MTRFranceAddon
-   ```
+## Repository layout
 
-2. **Configurer la version cible**
+This repo is a [Stonecutter](https://stonecutter.kikugie.dev/) multi-version project: `src/main/java` and `src/main/resources` hold **one** shared source tree for every Fabric version above. Each Minecraft version is its own Gradle subproject under `versions/<name>/`, holding only that version's dependency pins (`gradle.properties`) — never source code. Stonecutter "chisels" the shared source into each subproject at build time using comment directives (`//? if ... { ... //? }`), so the checked-out source is always valid, fully-typed Java.
 
-   Modifiez le fichier `gradle.properties` à la racine pour définir la version Minecraft :
-   ```properties
-   minecraft_version=1.20.4
-   ```
+**Forge isn't part of this Stonecutter tree.** Stonecutter requires Gradle 9+, and ForgeGradle explicitly refuses to run under Gradle 9 — one Gradle invocation can only use one Gradle version, so Forge can't share this build. It lives instead in the nested [`legacy-forge/`](legacy-forge/) project, on its own Gradle 8 wrapper, with a small hand-written Gradle task that resolves the same `//? if` comments Stonecutter uses here before every compile. See [`legacy-forge/README.md`](legacy-forge/README.md) for details.
 
-   Versions supportées : `1.20.4`, `1.20.1`, `1.19.4`, `1.19.2`, `1.18.2`, `1.17.1`, `1.16.5`
+## Building
 
-3. **Synchroniser les fichiers communs**
+Requires **JDK 21+** on `JAVA_HOME` for this Stonecutter tree (its own runtime requirement; per-version Java toolchains for compiling are 17), and a **JDK 17** ForgeGradle accepts for `legacy-forge/`.
 
-   Cette étape copie les fichiers Java et ressources partagés vers les modules Forge :
-   ```bash
-   ./gradlew setupFiles
-   ```
-
-4. **Compiler le projet**
-   ```bash
-   ./gradlew clean build
-   ```
-
-5. **Récupérer les JARs**
-
-   Les fichiers compilés se trouvent dans :
-    - `fabric/build/libs/MTRFRA-fabric-[version].jar`
-    - `fabric/build/libs/MTRFRA-forge-[version].jar`
-
-### Méthode 2 : Compilation Automatique (Toutes les Versions)
-
-Cette méthode utilise le script `buildAll.sh` pour compiler automatiquement le mod pour toutes les versions supportées.
-
-#### Étapes :
-
-1. **Cloner le repository** (si pas déjà fait)
-   ```bash
-   git clone https://github.com/[votre-username]/MTRFranceAddon.git
-   cd MTRFranceAddon
-   ```
-
-2. **Rendre le script exécutable** (Linux/macOS)
-   ```bash
-   chmod +x buildAll.sh
-   ```
-
-3. **Lancer la compilation complète**
-   ```bash
-   ./buildAll.sh
-   ```
-
-   Sur Windows avec Git Bash :
-   ```bash
-   sh buildAll.sh
-   ```
-
-   4. **Récupérer les JARs**
-
-      Tous les fichiers compilés sont automatiquement copiés dans le dossier `releases/` :
-      ```
-      releases/
-      ├── MTRFRA-fabric-1.20.4.jar
-      ├── MTRFRA-forge-1.20.4.jar
-      ├── MTRFRA-fabric-1.20.1.jar
-      ├── MTRFRA-forge-1.20.1.jar
-      └── ...
-      ```
-
----
-
-## 📁 Structure du Projet
-
-```
-MTRFranceAddon/
-├── fabric/                 # Module Fabric
-│   ├── src/
-│   │   ├── main/
-│   │   │   ├── java/      # Code source Fabric + Common
-│   │   │   └── resources/  # Ressources (textures, modèles, etc.)
-│   └── build.gradle
-├── forge/                  # Module Forge
-│   ├── src/
-│   │   ├── main/
-│   │   │   ├── java/      # Code spécifique Forge (copié depuis Fabric)
-│   │   │   └── resources/  # Ressources (copiées depuis Fabric)
-│   └── build.gradle
-├── build/                  # Fichiers de build temporaires
-├── releases/               # JARs finaux (Méthode 2)
-├── gradle.properties       # Configuration principale
-├── settings.gradle         # Configuration multi-modules
-├── buildAll.sh            # Script de compilation automatique
-└── README.md
-```
-
----
-
-## 🚀 Installation du Mod
-
-1. **Installer Minecraft** avec la version souhaitée
-2. **Installer le mod loader** approprié :
-    - [Fabric Loader](https://fabricmc.net/) pour la version Fabric
-    - [Minecraft Forge](https://files.minecraftforge.net/) pour la version Forge
-3. **Installer les dépendances** :
-    - [Minecraft Transit Railway (MTR)](https://modrinth.com/mod/minecraft-transit-railway) version 4.0.0+
-    - [Fabric API](https://modrinth.com/mod/fabric-api) (Fabric uniquement)
-4. **Placer le JAR** de MTR France Addon dans le dossier `mods/`
-
----
-
-## ⚙️ Notes Techniques
-
-### Tâches Gradle Principales
-
-- `setupFiles` : Synchronise les fichiers communs entre Fabric et Forge
-- `clean` : Nettoie les fichiers de build
-- `build` : Compile le projet pour les deux loaders
-- `shadowJar` : Package les dépendances nécessaires
-
-### Versions Java Requises
-
-Le projet détecte automatiquement la version Java requise selon Minecraft :
-
-| Minecraft | Java |
-|-----------|------|
-| 1.16.5    | 8    |
-| 1.17.1    | 16   |
-| 1.18.2-1.20.4 | 17 |
-| 1.20.5+   | 21   |
-
-### Compatibilité Cross-Version
-
-Le projet utilise Manifold Preprocessor pour gérer les différences entre versions de Minecraft, permettant un code source unique pour toutes les versions supportées.
-
----
-
-## 🐛 Dépannage
-
-### Erreur "Permission denied" sur Linux/macOS
 ```bash
-chmod +x gradlew buildAll.sh
+./gradlew build                    # every Fabric/NeoForge version in this tree
+./gradlew :1.20.4-fabric:build      # just one version
+
+cd legacy-forge && ./gradlew build -Pminecraft_version=1.20.4   # Forge, one version
 ```
 
-### Erreur de compilation Java
-Vérifiez que vous utilisez la bonne version de Java pour votre version Minecraft cible.
+Or use the top-level script, which drives both:
 
-### Les fichiers ne sont pas copiés vers Forge
-Assurez-vous d'exécuter `./gradlew setupFiles` avant la compilation.
+```bash
+./build.sh                    # every version, every loader (Fabric + Forge)
+./build.sh -v 1.20.4           # one Minecraft version, all its loaders
+./build.sh -l forge            # Forge only, every version
+```
 
----
+Jars land in `releases/`.
 
-## 📝 Licence
+## Developing
 
-Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE.txt) pour plus de détails.
+`stonecutter active "1.20.4-fabric"` in `stonecutter.gradle.kts` controls which version the root project (and your IDE) currently represents — edit `src/` directly against that version. To switch:
 
----
+```bash
+./gradlew "Set active project to 1.20.1-fabric"   # rewrites src/ comments and updates `stonecutter active`
+./gradlew "Reset active project"                   # back to the vcsVersion (1.20.4-fabric) - do this before committing
+./gradlew "Refresh active project"                  # re-run the comment processor without switching, if a `//? if` block looks out of sync
+./gradlew stonecutterIdea                           # generates IntelliJ run configurations for the tasks above
+```
 
-## 🤝 Contribution
+Never hand-edit which side of a `//? if / else` block is commented out — always go through one of the tasks above, so the branch that's live in your working copy actually matches the active version's constants.
 
-Les contributions sont les bienvenues ! N'hésitez pas à :
-- Signaler des bugs via les Issues
-- Proposer de nouvelles fonctionnalités
-- Soumettre des Pull Requests
+## License
 
----
-
-## 📞 Contact
-
-Pour toute question ou suggestion, n'hésitez pas à ouvrir une Issue sur GitHub.
+MIT — see [LICENSE.txt](LICENSE.txt).

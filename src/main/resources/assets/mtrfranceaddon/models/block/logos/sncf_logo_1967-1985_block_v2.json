@@ -1,0 +1,6 @@
+{
+  "parent": "mtrfranceaddon:block/logos/sign",
+  "textures": {
+    "front": "mtrfranceaddon:block/logos/sncf_logo_1967-1985_block_v2"
+  }
+}

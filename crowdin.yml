@@ -1,3 +1,0 @@
-files:
-  - source: /fabric/src/main/resources/assets/mtrfranceaddon/lang/en_us.json
-    translation: /fabric/src/main/resources/assets/mtrfranceaddon/lang/%locale_with_underscore%.json

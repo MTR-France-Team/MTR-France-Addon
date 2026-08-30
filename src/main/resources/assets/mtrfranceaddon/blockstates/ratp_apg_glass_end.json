@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "mtrfranceaddon:block/apg/ratp_apg_glass_end_bottom"
+    },
+    "half=upper": {
+      "model": "mtrfranceaddon:block/apg/ratp_apg_glass_end_top"
+    }
+  }
+}

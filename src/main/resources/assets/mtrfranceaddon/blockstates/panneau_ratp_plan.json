@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_plan"
+    },
+    "facing=east": {
+      "model": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_plan",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_plan",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_plan",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=north,category=0": {
+      "model": "mtrfranceaddon:block/panneau_sncf/panneau_sncf_double"
+    },
+    "facing=north,category=1": {
+      "model": "mtrfranceaddon:block/panneau_sncf/panneau_sncf_double_logo"
+    },
+    "facing=east,category=0": {
+      "model": "mtrfranceaddon:block/panneau_sncf/panneau_sncf_double",
+      "y": 90
+    },
+    "facing=east,category=1": {
+      "model": "mtrfranceaddon:block/panneau_sncf/panneau_sncf_double_logo",
+      "y": 90
+    },
+    "facing=south,category=0": {
+      "model": "mtrfranceaddon:block/panneau_sncf/panneau_sncf_double",
+      "y": 180
+    },
+    "facing=south,category=1": {
+      "model": "mtrfranceaddon:block/panneau_sncf/panneau_sncf_double_logo",
+      "y": 180
+    },
+    "facing=west,category=0": {
+      "model": "mtrfranceaddon:block/panneau_sncf/panneau_sncf_double",
+      "y": 270
+    },
+    "facing=west,category=1": {
+      "model": "mtrfranceaddon:block/panneau_sncf/panneau_sncf_double_logo",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "variants": {
+    "type=bottom,axis=z": {
+      "model": "mtrfranceaddon:block/building_materials/grey_anthracite_limestone_paving_slab",
+      "y": 270
+    },
+    "type=bottom,axis=x": {
+      "model": "mtrfranceaddon:block/building_materials/grey_anthracite_limestone_paving_slab"
+    },
+    "type=top,axis=z": {
+      "model": "mtrfranceaddon:block/building_materials/grey_anthracite_limestone_paving_slab_top",
+      "y": 270
+    },
+    "type=top,axis=x": {
+      "model": "mtrfranceaddon:block/building_materials/grey_anthracite_limestone_paving_slab_top"
+    },
+    "type=double,axis=z": {
+      "model": "mtrfranceaddon:block/building_materials/grey_anthracite_limestone_paving",
+      "y": 270
+    },
+    "type=double,axis=x": {
+      "model": "mtrfranceaddon:block/building_materials/grey_anthracite_limestone_paving"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "mtrfranceaddon:block/logos/sign",
+  "textures": {
+    "front": "mtrfranceaddon:block/logos/ratp_logo_1976-1992_block"
+  }
+}

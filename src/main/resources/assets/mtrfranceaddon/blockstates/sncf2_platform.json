@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "facing=north": { "model": "mtrfranceaddon:block/station_equipment/sncf2_platform" },
+    "facing=east":  { "model": "mtrfranceaddon:block/station_equipment/sncf2_platform", "y":  90 },
+    "facing=south": { "model": "mtrfranceaddon:block/station_equipment/sncf2_platform", "y": 180 },
+    "facing=west":  { "model": "mtrfranceaddon:block/station_equipment/sncf2_platform", "y": 270 }
+  }
+}
+

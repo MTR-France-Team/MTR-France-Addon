@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "mtrfranceaddon:block/signs/misc/sign_level_crossing"
+    },
+    "facing=south": {
+      "model": "mtrfranceaddon:block/signs/misc/sign_level_crossing",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "mtrfranceaddon:block/signs/misc/sign_level_crossing",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "mtrfranceaddon:block/signs/misc/sign_level_crossing",
+      "y": 90
+    }
+  }
+}

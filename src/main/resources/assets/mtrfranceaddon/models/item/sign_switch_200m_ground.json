@@ -1,0 +1,6 @@
+{
+  "parent": "mtrfranceaddon:block/signs/switch/sign_switch_200m_ground",
+  "textures": {
+    "layer0": "mtrfranceaddon:item/signs/switch/sign_switch_200m_ground"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "mtrfranceaddon:item/station_equipment/invisible_platform"
+  }
+}

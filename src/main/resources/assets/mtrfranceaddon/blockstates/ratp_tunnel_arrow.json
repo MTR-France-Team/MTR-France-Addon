@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "mtrfranceaddon:block/station_equipment/ratp_tunnel_arrow",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "mtrfranceaddon:block/station_equipment/ratp_tunnel_arrow",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "mtrfranceaddon:block/station_equipment/ratp_tunnel_arrow"
+    },
+    "facing=west": {
+      "model": "mtrfranceaddon:block/station_equipment/ratp_tunnel_arrow",
+      "y": 90
+    }
+  }
+}

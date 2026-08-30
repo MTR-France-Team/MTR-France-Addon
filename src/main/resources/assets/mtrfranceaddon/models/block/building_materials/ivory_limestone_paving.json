@@ -1,0 +1,81 @@
+{
+  "textures": {
+    "0": "mtrfranceaddon:block/building_materials/ivory_limestone_paving",
+    "particle": "mtrfranceaddon:block/building_materials/ivory_limestone_paving"
+  },
+  "elements": [
+    {
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        16,
+        16
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            16,
+            16,
+            0,
+            0
+          ],
+          "texture": "#0",
+          "rotation": 270
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#0",
+          "rotation": 90
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#0",
+          "rotation": 90
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#0",
+          "rotation": 90
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [
+            16,
+            0,
+            0,
+            16
+          ],
+          "texture": "#0",
+          "rotation": 180
+        }
+      }
+    }
+  ]
+}

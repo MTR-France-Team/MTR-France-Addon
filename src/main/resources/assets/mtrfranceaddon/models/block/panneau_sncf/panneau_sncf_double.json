@@ -1,0 +1,8 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Made with Blockbench",
+	"parent": "mtrfranceaddon:block/panneau_sncf/panneau_sncf_double_base",
+	"textures": {
+		"0": "mtrfranceaddon:block/panneau_sncf/panneau_sncf"
+	}
+}

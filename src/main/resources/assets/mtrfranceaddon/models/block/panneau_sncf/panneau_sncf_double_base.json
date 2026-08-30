@@ -1,0 +1,48 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"ambientocclusion": false,
+	"texture_size": [10, 20],
+	"textures": {
+		"0": "mtrfranceaddon:block/panneau_sncf/panneau_sncf",
+		"particle": "mtrfranceaddon:block/panneau_sncf/panneau_sncf"
+	},
+	"elements": [
+		{
+			"from": [-15, 1, 8],
+			"to": [31, 9, 8],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 8], "texture": "#0"},
+				"east": {"uv": [0, 0, 16, 8], "texture": "#0"},
+				"south": {"uv": [0, 0, 16, 8], "texture": "#0"},
+				"west": {"uv": [0, 0, 16, 8], "texture": "#0"},
+				"up": {"uv": [0, 0, 16, 8], "texture": "#0"},
+				"down": {"uv": [0, 0, 16, 8], "texture": "#0"}
+			}
+		},
+		{
+			"from": [31, 0, 7.5],
+			"to": [32, 9, 8.5],
+			"faces": {
+				"north": {"uv": [0, 8, 16, 16], "texture": "#0"},
+				"east": {"uv": [0, 8, 16, 16], "texture": "#0"},
+				"south": {"uv": [0, 8, 16, 16], "texture": "#0"},
+				"west": {"uv": [0, 8, 16, 16], "texture": "#0"},
+				"up": {"uv": [0, 8, 16, 16], "texture": "#0"},
+				"down": {"uv": [0, 8, 16, 16], "texture": "#0"}
+			}
+		},
+		{
+			"from": [-16, 0, 7.5],
+			"to": [-15, 9, 8.5],
+			"faces": {
+				"north": {"uv": [0, 8, 16, 16], "texture": "#0"},
+				"east": {"uv": [0, 8, 16, 16], "texture": "#0"},
+				"south": {"uv": [0, 8, 16, 16], "texture": "#0"},
+				"west": {"uv": [0, 8, 16, 16], "texture": "#0"},
+				"up": {"uv": [0, 8, 16, 16], "texture": "#0"},
+				"down": {"uv": [0, 8, 16, 16], "texture": "#0"}
+			}
+		}
+	]
+}

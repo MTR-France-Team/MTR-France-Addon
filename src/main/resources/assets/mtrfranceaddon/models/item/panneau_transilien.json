@@ -1,0 +1,66 @@
+{
+  "parent": "mtrfranceaddon:block/panneau_transilien/panneau_transilien",
+  "display": {
+    "thirdperson_righthand": {
+      "scale": [
+        0.3333,
+        0.3333,
+        0.3333
+      ]
+    },
+    "thirdperson_lefthand": {
+      "scale": [
+        0.3333,
+        0.3333,
+        0.3333
+      ]
+    },
+    "firstperson_righthand": {
+      "scale": [
+        0.3333,
+        0.3333,
+        0.3333
+      ]
+    },
+    "firstperson_lefthand": {
+      "scale": [
+        0.3333,
+        0.3333,
+        0.3333
+      ]
+    },
+    "ground": {
+      "scale": [
+        0.3333,
+        0.3333,
+        0.3333
+      ]
+    },
+    "gui": {
+      "scale": [
+        0.25,
+        0.25,
+        0.25
+      ],
+      "rotation": [
+        30,
+        225,
+        0
+      ]
+    },
+    "fixed": {
+      "scale": [
+        0.3333,
+        0.3333,
+        0.3333
+      ]
+    },
+    "on_shelf": {
+      "scale": [
+        0.3333,
+        0.3333,
+        0.3333
+      ]
+    }
+  }
+}

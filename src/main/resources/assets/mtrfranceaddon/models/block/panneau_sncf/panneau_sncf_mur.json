@@ -1,0 +1,6 @@
+{
+  "parent": "mtrfranceaddon:block/panneau_sncf/panneau_sncf_mur_base",
+  "textures": {
+    "0": "mtrfranceaddon:block/panneau_sncf/panneau_sncf"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "parent": "block/block",
+  "textures": {
+    "particle": "minecraft:block/smooth_stone",
+    "top": "mtrfranceaddon:block/station_equipment/platform_sncf_2",
+    "side": "minecraft:block/smooth_stone"
+  },
+  "elements": [
+    {
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        14,
+        16
+      ],
+      "faces": {
+        "down": {
+          "texture": "#side",
+          "cullface": "down"
+        },
+        "up": {
+          "texture": "#top"
+        },
+        "north": {
+          "texture": "#side",
+          "uv": [
+            0,
+            2,
+            16,
+            16
+          ]
+        },
+        "south": {
+          "texture": "#side",
+          "uv": [
+            0,
+            2,
+            16,
+            16
+          ]
+        },
+        "west": {
+          "texture": "#side",
+          "uv": [
+            0,
+            2,
+            16,
+            16
+          ]
+        },
+        "east": {
+          "texture": "#side",
+          "uv": [
+            0,
+            2,
+            16,
+            16
+          ]
+        }
+      }
+    }
+  ]
+}
