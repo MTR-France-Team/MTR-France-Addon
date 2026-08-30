@@ -1,9 +1,0 @@
-{
-  "variants": {
-    "facing=north": { "model": "mtrfranceaddon:block/ratp_platform_indented" },
-    "facing=east":  { "model": "mtrfranceaddon:block/ratp_platform_indented", "y":  90 },
-    "facing=south": { "model": "mtrfranceaddon:block/ratp_platform_indented", "y": 180 },
-    "facing=west":  { "model": "mtrfranceaddon:block/ratp_platform_indented", "y": 270 }
-  }
-}
-

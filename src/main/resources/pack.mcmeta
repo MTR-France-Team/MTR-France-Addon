@@ -1,0 +1,6 @@
+{
+  "pack": {
+    "description": "MTR France Addon - built-in resources",
+    "pack_format": ${pack_format}
+  }
+}

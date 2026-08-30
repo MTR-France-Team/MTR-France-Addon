@@ -1,0 +1,17 @@
+{
+  "parent": "mtrfranceaddon:block/panneau_sncf/pilier_sncf",
+  "display": {
+    "gui": {
+      "scale": [
+        0.8,
+        0.8,
+        0.8
+      ],
+      "rotation": [
+        30,
+        225,
+        0
+      ]
+    }
+  }
+}

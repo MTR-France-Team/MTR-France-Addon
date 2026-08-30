@@ -1,55 +1,41 @@
-### ------------------------------------------------------------------- 
-###
-### TAKEN FROM Joban Client Mod....................................JCM
-### Readapted by Aca. & Flyzar(73) for MTR France Addon.........MTRFRA
-###
-### ------------------------------------------------------------------- 
-
-# gradle
-
+# Gradle
 .gradle/
 build/
 out/
 classes/
-*.bak
 releases/
+*.bak
+*.bak_*
+
+# Stonecutter per-version build caches (each versions/<name> only keeps
+# its own gradle.properties under version control)
+versions/*/.gradle/
+versions/*/build/
+
+# Dev files
 run/
-/src/
+runs/
+run-shared/
+tools/
+CHANGELOG.md
+.env
 
-# eclipse
-
-*.launch
-
-# idea
-
+# IDE
 .idea/
 *.iml
 *.ipr
 *.iws
-
-# vscode
-
-.settings/
 .vscode/
-bin/
+.settings/
 .classpath
 .project
+bin/
+*.launch
 
-# macos
-
+# macOS
 *.DS_Store
 
-# fabric
-
-#~nothing~
-
-# forge
-/forge/src/main/java/**/mod
-/forge/src/main/resources/assets
-/forge/src/main/resources/datay
-
-# java
-
+# Java
 hs_err_*.log
 replay_*.log
 *.hprof

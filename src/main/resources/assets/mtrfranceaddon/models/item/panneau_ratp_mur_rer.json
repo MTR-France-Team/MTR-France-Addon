@@ -1,0 +1,66 @@
+{
+  "parent": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_mur_rer_panneau_ratp_pilier",
+  "display": {
+    "thirdperson_righthand": {
+      "scale": [
+        0.3478,
+        0.3478,
+        0.3478
+      ]
+    },
+    "thirdperson_lefthand": {
+      "scale": [
+        0.3478,
+        0.3478,
+        0.3478
+      ]
+    },
+    "firstperson_righthand": {
+      "scale": [
+        0.3478,
+        0.3478,
+        0.3478
+      ]
+    },
+    "firstperson_lefthand": {
+      "scale": [
+        0.3478,
+        0.3478,
+        0.3478
+      ]
+    },
+    "ground": {
+      "scale": [
+        0.3478,
+        0.3478,
+        0.3478
+      ]
+    },
+    "gui": {
+      "scale": [
+        0.26,
+        0.26,
+        0.26
+      ],
+      "rotation": [
+        30,
+        45,
+        0
+      ]
+    },
+    "fixed": {
+      "scale": [
+        0.3478,
+        0.3478,
+        0.3478
+      ]
+    },
+    "on_shelf": {
+      "scale": [
+        0.3478,
+        0.3478,
+        0.3478
+      ]
+    }
+  }
+}

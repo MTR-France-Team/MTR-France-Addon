@@ -1,0 +1,64 @@
+{
+  "variants": {
+    "facing=north,open=closed": {
+      "model": "mtrfranceaddon:block/station_equipment/ratp_ticket_barrier_closed_with_side",
+      "y": 180
+    },
+    "facing=east,open=closed": {
+      "model": "mtrfranceaddon:block/station_equipment/ratp_ticket_barrier_closed_with_side",
+      "y": 270
+    },
+    "facing=south,open=closed": {
+      "model": "mtrfranceaddon:block/station_equipment/ratp_ticket_barrier_closed_with_side"
+    },
+    "facing=west,open=closed": {
+      "model": "mtrfranceaddon:block/station_equipment/ratp_ticket_barrier_closed_with_side",
+      "y": 90
+    },
+    "facing=north,open=pending": {
+      "model": "mtrfranceaddon:block/station_equipment/ratp_ticket_barrier_closed_with_side",
+      "y": 180
+    },
+    "facing=east,open=pending": {
+      "model": "mtrfranceaddon:block/station_equipment/ratp_ticket_barrier_closed_with_side",
+      "y": 270
+    },
+    "facing=south,open=pending": {
+      "model": "mtrfranceaddon:block/station_equipment/ratp_ticket_barrier_closed_with_side"
+    },
+    "facing=west,open=pending": {
+      "model": "mtrfranceaddon:block/station_equipment/ratp_ticket_barrier_closed_with_side",
+      "y": 90
+    },
+    "facing=north,open=open": {
+      "model": "mtrfranceaddon:block/station_equipment/ratp_ticket_barrier_open_with_side",
+      "y": 180
+    },
+    "facing=east,open=open": {
+      "model": "mtrfranceaddon:block/station_equipment/ratp_ticket_barrier_open_with_side",
+      "y": 270
+    },
+    "facing=south,open=open": {
+      "model": "mtrfranceaddon:block/station_equipment/ratp_ticket_barrier_open_with_side"
+    },
+    "facing=west,open=open": {
+      "model": "mtrfranceaddon:block/station_equipment/ratp_ticket_barrier_open_with_side",
+      "y": 90
+    },
+    "facing=north,open=open_concessionary": {
+      "model": "mtrfranceaddon:block/station_equipment/ratp_ticket_barrier_open_with_side",
+      "y": 180
+    },
+    "facing=east,open=open_concessionary": {
+      "model": "mtrfranceaddon:block/station_equipment/ratp_ticket_barrier_open_with_side",
+      "y": 270
+    },
+    "facing=south,open=open_concessionary": {
+      "model": "mtrfranceaddon:block/station_equipment/ratp_ticket_barrier_open_with_side"
+    },
+    "facing=west,open=open_concessionary": {
+      "model": "mtrfranceaddon:block/station_equipment/ratp_ticket_barrier_open_with_side",
+      "y": 90
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "mtrfranceaddon:block/panneau_transilien/pilier_transilien"
+    }
+  }
+}

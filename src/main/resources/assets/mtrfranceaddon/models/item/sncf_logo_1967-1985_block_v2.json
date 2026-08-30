@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "mtrfranceaddon:block/logos/sncf_logo_1967-1985_block_v2"
+  },
+  "gui_light": "front"
+}

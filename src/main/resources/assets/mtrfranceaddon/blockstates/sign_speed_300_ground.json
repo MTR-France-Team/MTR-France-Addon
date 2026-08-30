@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "mtrfranceaddon:block/signs/speed_ground/sign_speed_300_ground"
+    },
+    "facing=south": {
+      "model": "mtrfranceaddon:block/signs/speed_ground/sign_speed_300_ground",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "mtrfranceaddon:block/signs/speed_ground/sign_speed_300_ground",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "mtrfranceaddon:block/signs/speed_ground/sign_speed_300_ground",
+      "y": 90
+    }
+  }
+}

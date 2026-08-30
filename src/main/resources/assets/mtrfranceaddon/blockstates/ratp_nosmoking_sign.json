@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "mtrfranceaddon:block/station_equipment/ratp_nosmoking_sign"
+    },
+    "facing=south": {
+      "model": "mtrfranceaddon:block/station_equipment/ratp_nosmoking_sign",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "mtrfranceaddon:block/station_equipment/ratp_nosmoking_sign",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "mtrfranceaddon:block/station_equipment/ratp_nosmoking_sign",
+      "y": 90
+    }
+  }
+}

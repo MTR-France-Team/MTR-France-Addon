@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "mtrfranceaddon:block/signs/misc/sign_platform_left"
+    },
+    "facing=south": {
+      "model": "mtrfranceaddon:block/signs/misc/sign_platform_left",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "mtrfranceaddon:block/signs/misc/sign_platform_left",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "mtrfranceaddon:block/signs/misc/sign_platform_left",
+      "y": 90
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "parent": "block/block",
+  "textures": {
+    "3": "mtrfranceaddon:block/panneau_transilien/pilier_transilien_post",
+    "particle": "mtrfranceaddon:block/panneau_transilien/pilier_transilien_post"
+  },
+  "elements": [
+    {
+      "from": [
+        7.5,
+        0,
+        7.5
+      ],
+      "to": [
+        8.5,
+        16,
+        8.5
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0.0,
+            0.0,
+            1.0,
+            3.0
+          ],
+          "texture": "#3"
+        },
+        "east": {
+          "uv": [
+            1.0,
+            0.0,
+            2.0,
+            3.0
+          ],
+          "texture": "#3"
+        },
+        "south": {
+          "uv": [
+            2.0,
+            0.0,
+            3.0,
+            3.0
+          ],
+          "texture": "#3"
+        },
+        "west": {
+          "uv": [
+            3.0,
+            0.0,
+            4.0,
+            3.0
+          ],
+          "texture": "#3"
+        },
+        "up": {
+          "uv": [
+            5.0,
+            1.0,
+            4.0,
+            0.0
+          ],
+          "texture": "#3"
+        },
+        "down": {
+          "uv": [
+            5.0,
+            0.0,
+            4.0,
+            1.0
+          ],
+          "texture": "#3"
+        }
+      }
+    }
+  ]
+}

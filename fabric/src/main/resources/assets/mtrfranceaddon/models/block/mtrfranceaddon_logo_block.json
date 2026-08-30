@@ -1,6 +1,0 @@
-{
-  "parent": "mtrfranceaddon:block/sign",
-  "textures": {
-    "front": "mtrfranceaddon:block/mtrfranceaddon_logo_block"
-  }
-}

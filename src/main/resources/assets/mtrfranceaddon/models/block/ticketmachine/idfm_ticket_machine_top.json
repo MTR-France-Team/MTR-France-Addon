@@ -1,0 +1,7 @@
+{
+	"parent": "block/block",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"particle": "mtrfranceaddon:block/vending_machine/ticketvendor1"
+	}
+}

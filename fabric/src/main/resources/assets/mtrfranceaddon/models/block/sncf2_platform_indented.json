@@ -1,8 +1,0 @@
-{
-  "parent": "mtrfranceaddon:block/platform_indented",
-  "textures": {
-    "top": "mtrfranceaddon:block/platform_sncf_2",
-    "side": "minecraft:block/smooth_stone"
-  }
-}
-

@@ -1,0 +1,5 @@
+{
+  "multipart": [
+    { "apply": { "model": "mtrfranceaddon:block/building_materials/copycat_layer_platform" } }
+  ]
+}

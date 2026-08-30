@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "mtrfranceaddon:block/building_materials/copycat_layer"
+  }
+}

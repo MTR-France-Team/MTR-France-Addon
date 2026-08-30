@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "mtrfranceaddon:block/idfm_train_j"
+    },
+    "facing=south": {
+      "model": "mtrfranceaddon:block/idfm_train_j",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "mtrfranceaddon:block/idfm_train_j",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "mtrfranceaddon:block/idfm_train_j",
+      "y": 90
+    }
+  }
+}

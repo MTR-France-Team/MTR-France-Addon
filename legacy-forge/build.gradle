@@ -1,0 +1,267 @@
+plugins {
+    id "eclipse"
+    id "idea"
+    id "net.minecraftforge.gradle" version "[6.0.16,6.2)"
+    id "org.spongepowered.mixin" version "0.7.+"
+}
+
+version = "${mod_version}+${minecraft_version}"
+group = maven_group
+
+base {
+    archivesName = "${archives_base_name}-forge"
+}
+
+sourceSets {
+    main {
+        output.resourcesDir = file("${buildDir}/classes/java/main")
+    }
+}
+
+tasks.register("resolveStonecutter") {
+    def srcRoot = file("../src/main/java/fr/mtrfra/mod")
+    def destRoot = file("src/main/java/fr/mtrfra/mod")
+    def targetVersion = minecraft_version
+
+    inputs.dir(srcRoot)
+    inputs.property("minecraft_version", targetVersion)
+    outputs.dir(destRoot)
+
+    doLast {
+        resolveStonecutterTree(srcRoot, destRoot, targetVersion)
+    }
+}
+
+tasks.named("compileJava") {
+    dependsOn("resolveStonecutter")
+}
+
+def parseVersion(String v) {
+    def parts = v.trim().split("\\.")
+    return [
+        (parts.size() > 0 ? parts[0] as int : 0),
+        (parts.size() > 1 ? parts[1] as int : 0),
+        (parts.size() > 2 ? parts[2] as int : 0)
+    ]
+}
+
+def compareVersions(List a, List b) {
+    for (int i = 0; i < 3; i++) {
+        int cmp = a[i] <=> b[i]
+        if (cmp != 0) return cmp
+    }
+    return 0
+}
+
+def conditionMatches(String cond, List target, String loader) {
+    def m = cond =~ /^(>=|<=|>|<|=)\s*([\d.]+)$/
+    if (m.matches()) {
+        def cmp = compareVersions(target, parseVersion(m.group(2)))
+        switch (m.group(1)) {
+            case ">=": return cmp >= 0
+            case "<=": return cmp <= 0
+            case ">":  return cmp > 0
+            case "<":  return cmp < 0
+            case "=":  return cmp == 0
+        }
+    }
+    return cond == loader
+}
+
+def stripBlockCommentWrapper(List<String> lines) {
+    if (lines.isEmpty()) return lines
+    def m = lines[0] =~ /^[ \t]*\/\*(.*)$/
+    if (m.find()) {
+        def rest = m.group(1)
+        def result = new ArrayList<String>()
+        if (rest.trim()) result.add(rest)
+        result.addAll(lines.subList(1, lines.size()))
+        return result
+    }
+    return lines
+}
+
+def resolveJavaText(String text, List target, String loader, String pathForErrors) {
+    def ifPattern = ~/^([ \t]*)\/\/\?\s*if\s*(.+?)\s*\{\s*$/
+    def elsePattern = ~/^[ \t]*\/\/\?\s*\}\s*else\s*\{\s*$/
+    def endPattern = ~/^[ \t]*(?:\*\/\/\/\?\s*\}|\/\/\?\s*\})\s*$/
+
+    def lines = text.split("\n", -1) as List<String>
+    def out = new ArrayList<String>()
+    int i = 0
+    int n = lines.size()
+
+    while (i < n) {
+        def line = lines[i]
+        def m = ifPattern.matcher(line)
+        if (!m.matches()) {
+            out.add(line)
+            i++
+            continue
+        }
+
+        def cond = m.group(2)
+        boolean activeBranch = conditionMatches(cond, target, loader)
+
+        i++
+        def trueBody = new ArrayList<String>()
+        boolean sawElse = false
+        boolean terminated = false
+        while (i < n) {
+            if (elsePattern.matcher(lines[i]).matches()) {
+                sawElse = true
+                i++
+                terminated = true
+                break
+            }
+            if (endPattern.matcher(lines[i]).matches()) {
+                terminated = true
+                break
+            }
+            trueBody.add(lines[i])
+            i++
+        }
+        if (!terminated) {
+            throw new GradleException("${pathForErrors}: unterminated //? if block")
+        }
+
+        def falseBody = new ArrayList<String>()
+        if (sawElse) {
+            boolean closed = false
+            while (i < n) {
+                if (endPattern.matcher(lines[i]).matches()) {
+                    closed = true
+                    break
+                }
+                falseBody.add(lines[i])
+                i++
+            }
+            if (!closed) {
+                throw new GradleException("${pathForErrors}: unterminated //? else block")
+            }
+        }
+
+        trueBody = stripBlockCommentWrapper(trueBody)
+        falseBody = stripBlockCommentWrapper(falseBody)
+
+        i++
+
+        out.addAll(activeBranch ? trueBody : falseBody)
+    }
+
+    return out.join("\n")
+}
+
+void resolveStonecutterTree(File srcRoot, File destRoot, String targetVersionStr) {
+    def target = parseVersion(targetVersionStr)
+    delete(destRoot)
+    destRoot.mkdirs()
+
+    def count = 0
+    fileTree(srcRoot) { include "**/*.java" }.visit { details ->
+        if (details.isDirectory()) return
+        def destFile = new File(destRoot, details.relativePath.pathString)
+        def text = details.file.getText("UTF-8")
+        if (text.contains("//?")) {
+            text = resolveJavaText(text, target, "forge", details.relativePath.pathString)
+        }
+        destFile.parentFile.mkdirs()
+        destFile.setText(text, "UTF-8")
+        count++
+    }
+    logger.lifecycle("resolveStonecutter: resolved ${count} files for MC ${targetVersionStr}")
+}
+
+minecraft {
+    mappings channel: "official", version: minecraft_version
+    runs {
+        client {
+            property "forge.logging.console.level", "info"
+            mods {
+                mtrfranceaddon {
+                    source sourceSets.main
+                }
+            }
+        }
+        server {
+            args "--nogui"
+            mods {
+                mtrfranceaddon {
+                    source sourceSets.main
+                }
+            }
+        }
+    }
+}
+
+repositories {
+    exclusiveContent {
+        forRepository {
+            maven { url = "https://api.modrinth.com/maven" }
+        }
+        forRepositories(fg.repository)
+        filter { includeGroup "maven.modrinth" }
+    }
+}
+
+dependencies {
+    minecraft "net.minecraftforge:forge:${minecraft_version}-${project.properties["forge_version_$minecraft_version"]}"
+    implementation fg.deobf("maven.modrinth:minecraft-transit-railway:FORGE-${mtr_version}+${minecraft_version}")
+    annotationProcessor "org.spongepowered:mixin:0.8.5:processor"
+}
+
+processResources {
+    from("${projectDir}/../src/main/resources") {
+        include "assets/**"
+        include "pack.mcmeta"
+        include "META-INF/mods.toml"
+        include "${mod_id}.mixins.json"
+        exclude "META-INF/neoforge.mods.toml", "fabric.mod.json"
+    }
+
+    inputs.property("version", version)
+    inputs.property("minecraft_version", minecraft_version)
+    inputs.property("pack_format", project.properties["pack_format_$minecraft_version"])
+
+    filesMatching("META-INF/mods.toml") {
+        expand(
+            version: version,
+            minecraft_version: minecraft_version,
+            mod_id: mod_id,
+            mod_name: mod_name,
+            mod_author: mod_author,
+            mod_description: mod_description,
+            mod_issues: mod_issues,
+            forge_loader_range: project.properties["forge_loader_range_$minecraft_version"],
+            mtr_version_range: mtr_version_range
+        )
+    }
+
+    filesMatching("pack.mcmeta") {
+        expand(pack_format: project.properties["pack_format_$minecraft_version"])
+    }
+}
+
+mixin {
+    add sourceSets.main, "${mod_id}.refmap.json"
+    config "${mod_id}.mixins.json"
+}
+
+java {
+    withSourcesJar()
+    toolchain.languageVersion = JavaLanguageVersion.of(17)
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = "UTF-8"
+}
+
+tasks.jar {
+    from(rootProject.file("../LICENSE.txt")) {
+        rename { "${it}_${base.archivesName.get()}" }
+    }
+}
+
+reobf {
+    jar {}
+}

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "mtrfranceaddon:block/station_equipment/invisible_platform"
+    }
+  }
+}

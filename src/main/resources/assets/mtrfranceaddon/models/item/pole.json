@@ -1,0 +1,6 @@
+{
+  "parent": "mtrfranceaddon:block/signs/pole",
+  "textures": {
+    "layer0": "mtrfranceaddon:item/signs/pole"
+  }
+}

@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/cube_top",
-  "textures": {
-    "top": "mtrfranceaddon:block/platform_ratp",
-    "side": "minecraft:block/smooth_stone"
-  }
-}
-

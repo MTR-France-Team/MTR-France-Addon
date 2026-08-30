@@ -1,6 +1,0 @@
-{
-  "parent": "mtrfranceaddon:block/upsignblock",
-  "textures": {
-    "layer0": "mtrfranceaddon:item/upsignblock"
-  }
-}

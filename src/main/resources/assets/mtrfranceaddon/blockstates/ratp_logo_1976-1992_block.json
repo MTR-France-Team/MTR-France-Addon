@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "facing=north": { "model": "mtrfranceaddon:block/logos/ratp_logo_1976-1992_block" },
+    "facing=east":  { "model": "mtrfranceaddon:block/logos/ratp_logo_1976-1992_block", "y":  90 },
+    "facing=south": { "model": "mtrfranceaddon:block/logos/ratp_logo_1976-1992_block", "y": 180 },
+    "facing=west":  { "model": "mtrfranceaddon:block/logos/ratp_logo_1976-1992_block", "y": 270 }
+  }
+}
+

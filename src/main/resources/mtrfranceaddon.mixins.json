@@ -1,0 +1,24 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "fr.mtrfra.mod.mixin",
+  "mixins": [
+    "rail.RailTypeMixin",
+    "rail.RailSchemaAccessor",
+    "InitAccessorMixin",
+    "MainAccessorMixin"
+  ],
+  "client": [
+    "tab.CreativeModeTabMixin",
+    "tab.CreativeModeInventoryScreenMixin",
+    "tab.CreativeModeInventoryScreenAccessor",
+    "tab.ItemPickerMenuMixin",
+    "GraphicsHolderAccessor"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}

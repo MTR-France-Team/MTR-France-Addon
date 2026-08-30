@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "${mod_id}",
+  "version": "${version}",
+  "name": "${mod_name}",
+  "description": "${mod_description}",
+  "authors": ["Team MTR-FRA"],
+  "contact": {
+    "homepage": "https://github.com/MTR-France-Team/MTR-France-Addon",
+    "sources": "https://github.com/MTR-France-Team/MTR-France-Addon",
+    "issues": "https://github.com/MTR-France-Team/MTR-France-Addon/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/${mod_id}/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["fr.mtrfra.fabric.MainFabric"],
+    "client": ["fr.mtrfra.fabric.MainFabricClient"]
+  },
+  "mixins": ["${mod_id}.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}",
+    "mtr": "${mtr_dependency}"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.gg/485Mam2fM3"
+      },
+      "update_checker": true
+    }
+  }
+}

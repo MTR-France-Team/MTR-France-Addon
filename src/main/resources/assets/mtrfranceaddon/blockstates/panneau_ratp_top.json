@@ -1,0 +1,124 @@
+{
+  "variants": {
+    "facing=north,category=0": {
+      "model": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_top"
+    },
+    "facing=north,category=1": {
+      "model": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_top_logo"
+    },
+    "facing=north,category=2": {
+      "model": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_top_monument"
+    },
+    "facing=north,category=3": {
+      "model": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_top_logo_monument"
+    },
+    "facing=north,category=4": {
+      "model": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_top_point_interet"
+    },
+    "facing=north,category=5": {
+      "model": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_top_logo_point_interet"
+    },
+    "facing=north,category=6": {
+      "model": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_top_ville"
+    },
+    "facing=north,category=7": {
+      "model": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_top_logo_ville"
+    },
+    "facing=east,category=0": {
+      "model": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_top",
+      "y": 90
+    },
+    "facing=east,category=1": {
+      "model": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_top_logo",
+      "y": 90
+    },
+    "facing=east,category=2": {
+      "model": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_top_monument",
+      "y": 90
+    },
+    "facing=east,category=3": {
+      "model": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_top_logo_monument",
+      "y": 90
+    },
+    "facing=east,category=4": {
+      "model": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_top_point_interet",
+      "y": 90
+    },
+    "facing=east,category=5": {
+      "model": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_top_logo_point_interet",
+      "y": 90
+    },
+    "facing=east,category=6": {
+      "model": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_top_ville",
+      "y": 90
+    },
+    "facing=east,category=7": {
+      "model": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_top_logo_ville",
+      "y": 90
+    },
+    "facing=south,category=0": {
+      "model": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_top",
+      "y": 180
+    },
+    "facing=south,category=1": {
+      "model": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_top_logo",
+      "y": 180
+    },
+    "facing=south,category=2": {
+      "model": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_top_monument",
+      "y": 180
+    },
+    "facing=south,category=3": {
+      "model": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_top_logo_monument",
+      "y": 180
+    },
+    "facing=south,category=4": {
+      "model": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_top_point_interet",
+      "y": 180
+    },
+    "facing=south,category=5": {
+      "model": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_top_logo_point_interet",
+      "y": 180
+    },
+    "facing=south,category=6": {
+      "model": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_top_ville",
+      "y": 180
+    },
+    "facing=south,category=7": {
+      "model": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_top_logo_ville",
+      "y": 180
+    },
+    "facing=west,category=0": {
+      "model": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_top",
+      "y": 270
+    },
+    "facing=west,category=1": {
+      "model": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_top_logo",
+      "y": 270
+    },
+    "facing=west,category=2": {
+      "model": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_top_monument",
+      "y": 270
+    },
+    "facing=west,category=3": {
+      "model": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_top_logo_monument",
+      "y": 270
+    },
+    "facing=west,category=4": {
+      "model": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_top_point_interet",
+      "y": 270
+    },
+    "facing=west,category=5": {
+      "model": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_top_logo_point_interet",
+      "y": 270
+    },
+    "facing=west,category=6": {
+      "model": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_top_ville",
+      "y": 270
+    },
+    "facing=west,category=7": {
+      "model": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_top_logo_ville",
+      "y": 270
+    }
+  }
+}

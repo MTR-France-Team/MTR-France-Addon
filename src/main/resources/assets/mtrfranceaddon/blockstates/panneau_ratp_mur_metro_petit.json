@@ -1,0 +1,64 @@
+{
+  "variants": {
+    "facing=north,category=0": {
+      "model": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_mur_metro_petit"
+    },
+    "facing=north,category=1": {
+      "model": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_mur_metro_petit_point_interet"
+    },
+    "facing=north,category=2": {
+      "model": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_mur_metro_petit_monument"
+    },
+    "facing=north,category=3": {
+      "model": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_mur_metro_petit_ville"
+    },
+    "facing=east,category=0": {
+      "model": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_mur_metro_petit",
+      "y": 90
+    },
+    "facing=east,category=1": {
+      "model": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_mur_metro_petit_point_interet",
+      "y": 90
+    },
+    "facing=east,category=2": {
+      "model": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_mur_metro_petit_monument",
+      "y": 90
+    },
+    "facing=east,category=3": {
+      "model": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_mur_metro_petit_ville",
+      "y": 90
+    },
+    "facing=south,category=0": {
+      "model": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_mur_metro_petit",
+      "y": 180
+    },
+    "facing=south,category=1": {
+      "model": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_mur_metro_petit_point_interet",
+      "y": 180
+    },
+    "facing=south,category=2": {
+      "model": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_mur_metro_petit_monument",
+      "y": 180
+    },
+    "facing=south,category=3": {
+      "model": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_mur_metro_petit_ville",
+      "y": 180
+    },
+    "facing=west,category=0": {
+      "model": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_mur_metro_petit",
+      "y": 270
+    },
+    "facing=west,category=1": {
+      "model": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_mur_metro_petit_point_interet",
+      "y": 270
+    },
+    "facing=west,category=2": {
+      "model": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_mur_metro_petit_monument",
+      "y": 270
+    },
+    "facing=west,category=3": {
+      "model": "mtrfranceaddon:block/panneau_ratp/panneau_ratp_mur_metro_petit_ville",
+      "y": 270
+    }
+  }
+}

@@ -1,6 +1,0 @@
-{
-  "parent": "mtrfranceaddon:block/sign",
-  "textures": {
-    "front": "mtrfranceaddon:block/sncf_logo_actuel_block"
-  }
-}

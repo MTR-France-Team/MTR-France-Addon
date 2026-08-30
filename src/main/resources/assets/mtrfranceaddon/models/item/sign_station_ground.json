@@ -1,0 +1,6 @@
+{
+  "parent": "mtrfranceaddon:block/signs/misc/sign_station_ground",
+  "textures": {
+    "layer0": "mtrfranceaddon:item/signs/misc/sign_station_ground"
+  }
+}

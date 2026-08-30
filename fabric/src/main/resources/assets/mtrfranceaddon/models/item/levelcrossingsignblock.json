@@ -1,6 +1,0 @@
-{
-  "parent": "mtrfranceaddon:block/levelcrossingsignblock",
-  "textures": {
-    "layer0": "mtrfranceaddon:item/levelcrossingsignblock"
-  }
-}

@@ -1,0 +1,11 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "mtrfranceaddon:block/building_materials/anthracite_limestone_paving",
+      "y": 270
+    },
+    "axis=x": {
+      "model": "mtrfranceaddon:block/building_materials/anthracite_limestone_paving"
+    }
+  }
+}

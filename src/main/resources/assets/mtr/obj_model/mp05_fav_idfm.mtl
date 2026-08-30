@@ -1,0 +1,8 @@
+# Made in Blockbench 5.1.6
+newmtl m_48d8ce63-9662-56cb-60c2-d97a22d963f0
+map_Kd texture_int.png
+newmtl m_a5771b08-a662-8166-dd9a-b3fb485f4486
+map_Kd texture_tete_idfm.png
+newmtl m_3b67a5c5-379c-8ed4-42e4-d7afb8ccb88a
+map_Kd fix.png
+newmtl none

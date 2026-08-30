@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "top": "mtrfranceaddon:block/station_equipment/platform_sncf_2",
+    "side": "minecraft:block/smooth_stone_slab_side",
+    "bottom": "minecraft:block/smooth_stone"
+  }
+}
+
+

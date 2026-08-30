@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "mtrfranceaddon:block/signs/switch/sign_switch_200m_ground"
+    },
+    "facing=south": {
+      "model": "mtrfranceaddon:block/signs/switch/sign_switch_200m_ground",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "mtrfranceaddon:block/signs/switch/sign_switch_200m_ground",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "mtrfranceaddon:block/signs/switch/sign_switch_200m_ground",
+      "y": 90
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "parent": "block/block",
+  "textures": {
+    "particle": "mtrfranceaddon:block/platform/platform_layer",
+    "texture": "mtrfranceaddon:block/platform/platform_layer"
+  },
+  "elements": [
+    {
+      "from": [0, 0, 0],
+      "to": [16, 4, 16],
+      "faces": {
+        "down":  { "texture": "#texture", "cullface": "down" },
+        "up":    { "texture": "#texture" },
+        "north": { "texture": "#texture", "uv": [0, 12, 16, 16] },
+        "south": { "texture": "#texture", "uv": [0, 12, 16, 16] },
+        "west":  { "texture": "#texture", "uv": [0, 12, 16, 16] },
+        "east":  { "texture": "#texture", "uv": [0, 12, 16, 16] }
+      }
+    }
+  ]
+}

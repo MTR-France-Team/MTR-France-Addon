@@ -1,0 +1,6 @@
+{
+  "parent": "mtrfranceaddon:block/signs/gallows/sign_speed_120_gallows",
+  "textures": {
+    "layer0": "mtrfranceaddon:item/signs/gallows/sign_speed_120_gallows"
+  }
+}

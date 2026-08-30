@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "mtrfranceaddon:block/signs/pole_connection/pole_connection_horizontal"
+    },
+    "facing=south": {
+      "model": "mtrfranceaddon:block/signs/pole_connection/pole_connection_horizontal",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "mtrfranceaddon:block/signs/pole_connection/pole_connection_horizontal",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "mtrfranceaddon:block/signs/pole_connection/pole_connection_horizontal",
+      "y": 90
+    }
+  }
+}

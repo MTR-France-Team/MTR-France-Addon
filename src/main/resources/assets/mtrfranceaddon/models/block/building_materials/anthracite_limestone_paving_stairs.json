@@ -1,0 +1,33 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "mtrfranceaddon:block/building_materials/anthracite_limestone_paving",
+		"particle": "mtrfranceaddon:block/building_materials/anthracite_limestone_paving"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 8, 16],
+			"faces": {
+				"north": {"uv": [8, 0, 16, 16], "rotation": 90, "texture": "#0"},
+				"east": {"uv": [8, 0, 16, 16], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [8, 0, 16, 16], "rotation": 90, "texture": "#0"},
+				"west": {"uv": [8, 0, 16, 16], "rotation": 90, "texture": "#0"},
+				"up": {"uv": [0, 0, 16, 16], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [16, 0, 0, 16], "texture": "#0"}
+			}
+		},
+		{
+			"from": [8, 8, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 8, 8, 16], "rotation": 90, "texture": "#0"},
+				"east": {"uv": [0, 0, 8, 16], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [8, 16, 16, 8], "rotation": 90, "texture": "#0"},
+				"west": {"uv": [8, 0, 16, 16], "rotation": 90, "texture": "#0"},
+				"up": {"uv": [8, 16, 0, 0], "texture": "#0"}
+			}
+		}
+	]
+}

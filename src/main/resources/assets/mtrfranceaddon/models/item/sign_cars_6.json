@@ -1,0 +1,6 @@
+{
+  "parent": "mtrfranceaddon:block/signs/cars/sign_cars_6",
+  "textures": {
+    "layer0": "mtrfranceaddon:item/signs/cars/sign_cars_6"
+  }
+}

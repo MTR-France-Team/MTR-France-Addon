@@ -1,0 +1,25 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"texture_size": [10, 20],
+	"textures": {
+		"3": "mtrfranceaddon:block/panneau_sncf/panneau_sncf",
+		"particle": "mtrfranceaddon:block/panneau_sncf/panneau_sncf"
+	},
+	"elements": [
+		{
+			"from": [15, 0, 7.5],
+			"to": [16, 16, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [15.5, 4.5, 8]},
+			"faces": {
+				"north": {"uv": [0, 8, 16, 16], "texture": "#3"},
+				"east": {"uv": [0, 8, 16, 16], "texture": "#3"},
+				"south": {"uv": [0, 8, 16, 16], "texture": "#3"},
+				"west": {"uv": [0, 8, 16, 16], "texture": "#3"},
+				"up": {"uv": [0, 8, 16, 16], "texture": "#3"},
+				"down": {"uv": [0, 8, 16, 16], "texture": "#3"}
+			}
+		}
+	]
+}

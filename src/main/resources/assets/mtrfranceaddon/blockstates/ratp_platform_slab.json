@@ -1,0 +1,121 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "type": "bottom",
+        "facing": "north"
+      },
+      "apply": {
+        "model": "mtrfranceaddon:block/station_equipment/ratp_platform_slab"
+      }
+    },
+    {
+      "when": {
+        "type": "double",
+        "facing": "north"
+      },
+      "apply": {
+        "model": "mtrfranceaddon:block/station_equipment/ratp_platform"
+      }
+    },
+    {
+      "when": {
+        "type": "top",
+        "facing": "north"
+      },
+      "apply": {
+        "model": "mtrfranceaddon:block/station_equipment/ratp_platform_slab_top"
+      }
+    },
+    {
+      "when": {
+        "type": "bottom",
+        "facing": "east"
+      },
+      "apply": {
+        "model": "mtrfranceaddon:block/station_equipment/ratp_platform_slab",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "type": "double",
+        "facing": "east"
+      },
+      "apply": {
+        "model": "mtrfranceaddon:block/station_equipment/ratp_platform",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "type": "top",
+        "facing": "east"
+      },
+      "apply": {
+        "model": "mtrfranceaddon:block/station_equipment/ratp_platform_slab_top",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "type": "bottom",
+        "facing": "south"
+      },
+      "apply": {
+        "model": "mtrfranceaddon:block/station_equipment/ratp_platform_slab",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "type": "double",
+        "facing": "south"
+      },
+      "apply": {
+        "model": "mtrfranceaddon:block/station_equipment/ratp_platform",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "type": "top",
+        "facing": "south"
+      },
+      "apply": {
+        "model": "mtrfranceaddon:block/station_equipment/ratp_platform_slab_top",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "type": "bottom",
+        "facing": "west"
+      },
+      "apply": {
+        "model": "mtrfranceaddon:block/station_equipment/ratp_platform_slab",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "type": "double",
+        "facing": "west"
+      },
+      "apply": {
+        "model": "mtrfranceaddon:block/station_equipment/ratp_platform",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "type": "top",
+        "facing": "west"
+      },
+      "apply": {
+        "model": "mtrfranceaddon:block/station_equipment/ratp_platform_slab_top",
+        "y": 270
+      }
+    }
+  ]
+}

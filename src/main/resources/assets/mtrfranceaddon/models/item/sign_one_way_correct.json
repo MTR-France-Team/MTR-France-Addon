@@ -1,0 +1,6 @@
+{
+  "parent": "mtrfranceaddon:block/signs/direction/sign_one_way_correct",
+  "textures": {
+    "layer0": "mtrfranceaddon:item/signs/direction/sign_one_way_correct"
+  }
+}
